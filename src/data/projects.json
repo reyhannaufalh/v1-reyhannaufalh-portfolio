@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Project 1",
+    "slug": "project-1",
+    "tags": ["Web Development"],
+    "image": "../public/images/project-image-1.png"
+  },
+  {
+    "name": "Project 2",
+    "slug": "project-2",
+    "tags": ["UI/UX Design", "Personal Project"],
+    "image": "../public/images/project-image-1.png"
+  }
+]
