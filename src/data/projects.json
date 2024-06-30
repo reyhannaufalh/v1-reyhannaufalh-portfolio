@@ -1,14 +1,59 @@
 [
   {
-    "name": "Project 1",
-    "slug": "project-1",
-    "tags": ["Web Development"],
-    "image": "../public/images/project-image-1.png"
+    "id": 1,
+    "name": "Solusi Teknologi Informasi (SOLUTIF)",
+    "slug": "solusi-teknologi-informasi",
+    "tags": ["Web Development", "Real Project"],
+    "date": "2019-01-01",
+    "image": "../public/images/project-image-1.png",
+    "details": {
+      "overview": "Service Desk merupakan sistem yang mengkoordinir pertanyaan maupun keluhan atas aplikasi-aplikasi yang bersangkutan dan dapat memberikan solusi bagi permasalahan maupun pertanyaan tersebut; memberikan peluang dan mewujudkan kolaborasi antar instansi pemerintah dalam melaksanakan urusan dan tugas pemerintahan untuk mencapai tujuan bersama; dan meningkatkan kualitas dan jangkauan pelayanan publik kepada pegawai maupun masyarakat.",
+      "client": "Dinas Komunikasi dan Informatika Kabupaten Sukoharjo",
+      "role": "Fullstack Web Developer",
+      "tools": ["Laravel", "JQuery", "Tailwind CSS", "MySQL"],
+      "link": "https://solutif.spbe.sukoharjokab.go.id/"
+    }
   },
   {
-    "name": "Project 2",
-    "slug": "project-2",
-    "tags": ["UI/UX Design", "Personal Project"],
-    "image": "../public/images/project-image-1.png"
+    "id": 2,
+    "name": "Sistem Informasi Penatausaahan",
+    "slug": "sistem-informasi-penatausaahan",
+    "tags": ["Web Development", "Real Project"],
+    "date": "2019-01-02",
+    "image": "../public/images/project-image-1.png",
+    "details": {
+      "overview": "Sistem ini bertujuan untuk membantu pegawai pemerintahan dalam pembuatan surat dengan berbagai fitur yang dapat mempercepat proses pembuatannya. Harapannya sistem ini juga dapat membantu mempermudah dalam pengelolaan surat yang semakin banyak.",
+      "client": "Dinas Komunikasi dan Informatika Kabupaten Karanganyar",
+      "role": "Fullstack Web Developer",
+      "tools": [
+        "Laravel",
+        "Livewire",
+        "Alpine JS",
+        "Tailwind CSS",
+        "PostgreSQL"
+      ],
+      "link": "https://www.example.com"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Sistem Informasi Manajemen Surat",
+    "slug": "sistem-informasi-manajemen-surat",
+    "tags": ["Web Development", "Real Project"],
+    "date": "2019-01-03",
+    "image": "../public/images/project-image-1.png",
+    "details": {
+      "overview": "Sistem ini bertujuan untuk membantu pegawai pemerintahan dalam pembuatan surat dengan berbagai fitur yang dapat mempercepat proses pembuatannya. Harapannya sistem ini juga dapat membantu mempermudah dalam pengelolaan surat yang semakin banyak.",
+      "client": "Dinas Komunikasi dan Informatika Kabupaten Karanganyar",
+      "role": "Fullstack Web Developer",
+      "tools": [
+        "Laravel",
+        "Livewire",
+        "Alpine JS",
+        "Tailwind CSS",
+        "PostgreSQL"
+      ],
+      "link": "https://www.example.com"
+    }
   }
 ]

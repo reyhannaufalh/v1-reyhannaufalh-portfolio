@@ -25,18 +25,12 @@ export default function Portfolio() {
 
   return (
     <>
-      <img
-        src="../public/images/background-hero.svg"
-        alt="bg"
-        className="absolute top-0 left-0 right-0 w-full -z-10"
-      />
-
-      <section className="container py-12 flex flex-col justify-center items-center gap-16">
+      <section className="container flex flex-col items-center justify-center gap-16 py-12">
         <div className="flex flex-col items-center">
           <h1 className="font-semibold text-5xl text-center max-w-5xl leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500 mb-3">
             The work I have done
           </h1>
-          <p className="text-neutral-400 mb-8">
+          <p className="mb-8 text-neutral-400">
             Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie,
           </p>
@@ -44,7 +38,7 @@ export default function Portfolio() {
             <input
               type="text"
               placeholder="Search a project by name"
-              className="py-3 px-4 bg-neutral-800 text-neutral-400 border border-neutral-500 rounded-md w-full"
+              className="w-full px-4 py-3 border rounded-md bg-neutral-800 text-neutral-400 border-neutral-500"
               value={searchTerm}
               onChange={handleSearchChange}
             />
@@ -84,15 +78,15 @@ export default function Portfolio() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project) => (
             <Link
               key={project.slug}
               to={`/projects/${project.slug}`}
-              className="relative flex overflow-hidden border rounded-2xl border-neutral-800 group hover:to-violet-950 transition-all duration-300 hover:border-violet-800"
+              className="relative flex overflow-hidden transition-all duration-300 border rounded-2xl border-neutral-800 group hover:to-violet-950 hover:border-violet-800"
             >
-              <div className="flex flex-col gap-4 w-full z-10 ">
-                <div className="w-full flex place-content-center">
+              <div className="z-10 flex flex-col w-full gap-4 ">
+                <div className="flex w-full place-content-center">
                   <img src={project.image} alt={project.name} />
                 </div>
 
@@ -102,7 +96,7 @@ export default function Portfolio() {
                     {project.tags.map((tag, index) => (
                       <span
                         key={index}
-                        className="text-xs font-semibold rounded bg-neutral-800 px-2 py-1"
+                        className="px-2 py-1 text-xs font-semibold rounded bg-neutral-800"
                       >
                         {tag}
                       </span>
