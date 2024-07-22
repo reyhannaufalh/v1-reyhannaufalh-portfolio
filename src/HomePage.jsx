@@ -1,18 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import projects from "./data/projects.json";
+
 import {
   faLinkedin,
   faDribbble,
   faInstagram,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-
-import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
+import ProjectCard from "./components/ProjectCard";
+import ContactForm from "./ContactForm";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
+  const dataProjects = projects.slice(0, 2);
   return (
     <>
-      <div className="container flex flex-col items-center justify-between gap-16 mt-16 xl:mt-10 xl:flex-row xl:px-44">
-        <div className="flex flex-col max-w-md gap-8 xl:max-w-2xl">
-          <p className="text-5xl font-extrabold leading-tight xl:text-7xl">
+      <div className="container flex flex-col items-center justify-between gap-16 mt-16 xl:mt-20 xl:flex-row xl:px-44">
+        <div className="flex flex-col w-full gap-8 xl:max-w-3xl">
+          <p className="text-5xl font-extrabold leading-tight lg:text-7xl">
             A web developer with a design centric approach.
           </p>
 
@@ -39,19 +44,25 @@ export default function HomePage() {
           <div className="flex items-center gap-4">
             <p>Find me - </p>
 
-            <a href="">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/reyhan-naufal-hakim-156235223/"
+            >
               <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
-            </a>
-            <a href="">
+            </Link>
+            <Link target="_blank" to="https://dribbble.com/reyhannaufal_4">
               <FontAwesomeIcon icon={faDribbble} className="text-2xl" />
-            </a>
-            <a href="">
+            </Link>
+            <Link target="_blank" to="https://www.instagram.com/reyhan_nh4/">
               <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
-            </a>
+            </Link>
+            <Link target="_blank" to="https://github.com/reyhannaufalh">
+              <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+            </Link>
           </div>
         </div>
 
-        <div className="flex items-center justify-center max-w-md h-full overflow-hidden rounded-t-full rounded-b-full bg-neutral-900 max-h-[550px] pt-32 relative">
+        <div className="flex items-center justify-center min-w-[400px] max-w-[600px] h-full overflow-hidden rounded-t-full rounded-b-full bg-neutral-900 max-h-[550px] pt-32 relative">
           <img
             src="../images/reyhan-grayscale.png"
             alt="thumb"
@@ -64,7 +75,7 @@ export default function HomePage() {
       </div>
 
       <div className="container my-20 xl:my-32">
-        <hr className="w-full border border-neutral-700 " />
+        <hr className="w-full border border-neutral-900" />
       </div>
 
       <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row xl:px-44">
@@ -112,7 +123,7 @@ export default function HomePage() {
       </div>
 
       <div className="container my-20 xl:my-32">
-        <hr className="w-full border border-neutral-700 " />
+        <hr className="w-full border border-neutral-900" />
       </div>
 
       <div className="container flex flex-col gap-16 xl:px-44">
@@ -121,86 +132,13 @@ export default function HomePage() {
         </h1>
 
         <div className="grid w-full grid-cols-2 gap-8">
-          {/* Card */}
-          <a
-            href="#"
-            className="col-span-2 overflow-hidden duration-500 lg:col-span-1 bg-neutral-900 rounded-2xl"
-          >
-            <div>
-              <img
-                src="../images/project-image-1.png"
-                alt="thumb"
-                className=""
-              />
-            </div>
-
-            <div className="p-6">
-              <div className="flex gap-3">
-                <p className="px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-400">
-                  Web Development
-                </p>
-                <p className="px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-400">
-                  UI/UX Design
-                </p>
-              </div>
-
-              <hr className="w-full my-6 mb-8 border border-neutral-700" />
-
-              <div className="flex flex-col gap-6">
-                <h5 className="text-2xl font-bold leading-tight xl:text-3xl">
-                  Saas page Design - Webflow Developmet
-                </h5>
-                <p className="text-neutral-300">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Obcaecati, tenetur.
-                </p>
-                <div className="flex items-center justify-center gap-2 w-fit">
-                  See details <FontAwesomeIcon icon={faCircleRight} />
-                </div>
-              </div>
-            </div>
-          </a>
-          {/* Card */}
-          {/* Card */}
-          <a
-            href="#"
-            className="col-span-2 overflow-hidden duration-500 lg:col-span-1 bg-neutral-900 rounded-2xl"
-          >
-            <div>
-              <img
-                src="../images/project-image-1.png"
-                alt="thumb"
-                className=""
-              />
-            </div>
-
-            <div className="p-6">
-              <div className="flex gap-3">
-                <p className="px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-400">
-                  Web Development
-                </p>
-                <p className="px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-400">
-                  UI/UX Design
-                </p>
-              </div>
-
-              <hr className="w-full my-6 mb-8 border border-neutral-700" />
-
-              <div className="flex flex-col gap-6">
-                <h5 className="text-2xl font-bold leading-tight xl:text-3xl">
-                  Saas page Design - Webflow Developmet
-                </h5>
-                <p className="text-neutral-300">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Obcaecati, tenetur.
-                </p>
-                <div className="flex items-center justify-center gap-2 w-fit">
-                  See details <FontAwesomeIcon icon={faCircleRight} />
-                </div>
-              </div>
-            </div>
-          </a>
-          {/* Card */}
+          {dataProjects ? (
+            dataProjects.map((project) => (
+              <ProjectCard key={project.slug} data={project} />
+            ))
+          ) : (
+            <p>No projects found</p>
+          )}
         </div>
 
         <a
@@ -212,64 +150,10 @@ export default function HomePage() {
       </div>
 
       <div className="container my-20 xl:my-32">
-        <hr className="w-full border border-neutral-700 " />
+        <hr className="w-full border border-neutral-900" />
       </div>
 
-      <div className="container flex flex-col items-start justify-between gap-16 lg:flex-row xl:px-44">
-        <div className="flex flex-col w-full gap-6">
-          <p className="text-3xl font-extrabold leading-tight xl:text-4xl">
-            Let&apos;s work together
-          </p>
-          <p className="text-neutral-300">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-            magni quae quod mollitia obcaecati dolor voluptatem nam
-            reprehenderit non earum?
-          </p>
-          <div className="flex items-center gap-4">
-            <p>Find me - </p>
-
-            <a href="">
-              <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
-            </a>
-            <a href="">
-              <FontAwesomeIcon icon={faDribbble} className="text-2xl" />
-            </a>
-            <a href="">
-              <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
-            </a>
-          </div>
-        </div>
-
-        <form action="" className="flex flex-col w-full gap-6">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            className="w-full px-6 py-5 bg-neutral-900 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            className="w-full px-6 py-5 bg-neutral-900 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500"
-          />
-
-          <textarea
-            name="message"
-            id=""
-            className="w-full px-6 py-5 bg-neutral-900 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500"
-            placeholder="Your message..."
-            rows="4"
-          ></textarea>
-
-          <button
-            type="submit"
-            className="px-8 py-4 font-semibold w-fit sm:text-lg bg-violet-600"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+      <ContactForm />
 
       <div className="mb-32"></div>
     </>

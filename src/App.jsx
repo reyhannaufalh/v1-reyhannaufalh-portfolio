@@ -26,7 +26,14 @@ const App = () => {
           }
         />
 
-        <Route path="/projects/:url" element={<ProjectDetails />} />
+        <Route
+          path="/projects/:url"
+          element={
+            <Layout>
+              <ProjectDetails />
+            </Layout>
+          }
+        />
       </Routes>
     </Router>
   );

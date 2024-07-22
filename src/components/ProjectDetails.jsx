@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import projects from "../data/projects.json";
+import ProjectCard from "./ProjectCard";
+import ContactForm from "../ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjectDetails() {
   const { url } = useParams();
@@ -17,58 +18,135 @@ export default function ProjectDetails() {
     month: "long",
   }).format(new Date(project.date));
 
+  const projectExceptThis = projects.filter((p) => p.slug !== url);
+
   return (
     <>
-      <img
-        src="../images/background-hero.svg"
-        alt="bg"
-        className="absolute top-0 left-0 right-0 w-full -z-10"
-      />
-
-      <div className="container mt-14">
-        <Link
-          to="/portfolio"
-          className="flex items-center gap-3 px-6 py-3 font-semibold rounded-full w-fit bg-neutral-800"
-        >
-          <FontAwesomeIcon icon={faArrowLeft} /> Back to my works
-        </Link>
-      </div>
-
-      <div className="container flex flex-col items-center justify-center gap-12 py-12">
-        <div className="text-center">
-          <h1 className="font-semibold text-6xl text-center max-w-5xl leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+      <div className="container flex flex-col gap-16 mt-16 xl:mt-20 xl:px-44">
+        <div>
+          <div className="flex gap-3">
+            {project.tags.map((tag, index) => (
+              <span
+                key={index}
+                className="px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-400"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          <h1 className="mt-6 text-5xl font-extrabold leading-tight lg:text-7xl">
             {project.name}
           </h1>
-          <p className="mt-3 text-xl text-neutral-400">
-            {project.details.client} - {formattedDate}
-          </p>
+
+          <div className="flex gap-4 mt-12">
+            <Link
+              to={project.details.link}
+              target="_blank"
+              className="px-8 py-4 font-semibold rounded-full sm:text-lg bg-violet-600"
+            >
+              Live Website{" "}
+              <FontAwesomeIcon icon={faCircleRight} className="ml-2" />
+            </Link>
+            <Link
+              to={project.details.link}
+              target="_blank"
+              className="px-8 py-4 font-semibold rounded-full sm:text-lg"
+            >
+              Contact me
+            </Link>
+          </div>
         </div>
 
-        <div className="relative flex w-full place-content-center">
-          <div className="p-6 border-2 border-neutral-700 rounded-2xl">
+        <div className="flex w-full place-content-center">
+          <div className="w-full p-6 border-2 border-neutral-700 rounded-2xl">
             <img
               src={project.image}
               alt={project.name}
-              className="h-auto mb-4 max-w-7xl"
+              className="w-full h-auto mb-4"
             />
           </div>
-
-          <div className="absolute bottom-0 left-0 right-0 z-10 w-full h-full bg-gradient-to-t from-neutral-900 to-transparent"></div>
         </div>
       </div>
 
-      <div className="flex-col max-w-5xl gap-6 px-24 mx-auto ">
+      <div className="container flex flex-col gap-16 mt-16 xl:mt-20 xl:px-56">
         <div>
-          <h5 className="font-semibold text-3xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+          <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
             Overview
           </h5>
+          <p className="mb-2 font-semibold">
+            Project from: {project.details.client}
+          </p>
           <p className="leading-relaxed text-neutral-300">
             {project.details.overview}
           </p>
         </div>
+
+        {project.details.problem && (
+          <div>
+            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+              Problem Statement
+            </h5>
+            <p className="leading-relaxed text-neutral-300">
+              {project.details.problem}
+            </p>
+          </div>
+        )}
+
+        {project.details.solution && (
+          <div>
+            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+              Solutions
+            </h5>
+            <p className="leading-relaxed text-neutral-300">
+              {project.details.solution}
+            </p>
+          </div>
+        )}
+
+        <div>
+          <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+            Tools
+          </h5>
+          <p></p>
+          <div className="flex flex-wrap gap-2">
+            {project.details.tools.map((tool, index) => (
+              <span
+                className="px-4 py-2 text-sm text-white duration-500 border-2 rounded-full cursor-pointer hover:border-violet-500 border-neutral-700"
+                key={index}
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <div className="mb-96"></div>
+      <div className="container my-20 xl:my-28">
+        <hr className="w-full border border-neutral-900 " />
+      </div>
+
+      <div className="container flex flex-col gap-16 xl:px-56">
+        <h5 className="font-bold text-5xl xl:text-6xl mb-2 text-center leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+          More related projects.
+        </h5>
+        <div className="grid w-full grid-cols-2 gap-8">
+          {projectExceptThis ? (
+            projectExceptThis.map((project, index) => (
+              <ProjectCard key={index} data={project} />
+            ))
+          ) : (
+            <p>No projects found</p>
+          )}
+        </div>
+      </div>
+
+      <div className="container my-20 xl:my-28">
+        <hr className="w-full border border-neutral-900 " />
+      </div>
+
+      <ContactForm />
+
+      <div className="mb-32"></div>
     </>
   );
 }

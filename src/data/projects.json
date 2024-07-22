@@ -37,22 +37,18 @@
   },
   {
     "id": 3,
-    "name": "Sistem Informasi Manajemen Surat",
-    "slug": "sistem-informasi-manajemen-surat",
-    "tags": ["Web Development", "Real Project"],
-    "date": "2019-01-03",
+    "name": "GuruneAI",
+    "slug": "gurune-ai",
+    "tags": ["UI/UX Design", "Award"],
+    "date": "2024-06-11",
     "image": "../public/images/project-image-1.png",
     "details": {
       "overview": "Sistem ini bertujuan untuk membantu pegawai pemerintahan dalam pembuatan surat dengan berbagai fitur yang dapat mempercepat proses pembuatannya. Harapannya sistem ini juga dapat membantu mempermudah dalam pengelolaan surat yang semakin banyak.",
-      "client": "Dinas Komunikasi dan Informatika Kabupaten Karanganyar",
-      "role": "Fullstack Web Developer",
-      "tools": [
-        "Laravel",
-        "Livewire",
-        "Alpine JS",
-        "Tailwind CSS",
-        "PostgreSQL"
-      ],
+      "problem": "Dalam konteks era kota pintar (smart city), pendidikan memainkan peran kunci dalam mempersiapkan generasi mendatang untuk menghadapi dinamika kompleks masyarakat modern yang semakin terhubung dan terotomatisasi. Namun, tantangan yang dihadapi oleh sistem pendidikan saat ini tetap signifikan, terutama dalam hal menyediakan pengalaman pembelajaran yang efektif, inklusif, dan beragam bagi setiap siswa. Terutama, di tengah kemajuan teknologi informasi dan komunikasi (TIK), masih ada ketidakseimbangan dalam akses terhadap materi pembelajaran yang berkualitas, serta kurangnya adaptasi terhadap gaya pembelajaran yang beragam. Dalam visi kota pintar, di mana infrastruktur dan layanan didukung oleh teknologi digital untuk meningkatkan kualitas hidup warga, pendidikan harus menjadi bagian integral dari transformasi ini.",
+      "solution": "GuruneAI hadir sebagai solusi inovatif dalam mengintegrasikan pendidikan dalam konteks kota pintar. GuruneAI bertujuan untuk merampingkan pengalaman pembelajaran dengan memanfaatkan kecerdasan buatan (AI) dan teknologi terkini lainnya untuk menciptakan lingkungan pembelajaran yang adaptif, inklusif, dan interaktif. Dengan menghadirkan akses terbuka terhadap beragam materi pembelajaran, GuruneAI memungkinkan siswa untuk mengeksplorasi topik-topik yang menarik minat mereka, menggali lebih dalam, dan mengembangkan kreativitas serta keterampilan yang diperlukan untuk sukses di masa depan.",
+      "client": "Lomba Akademik Mobile App Design IT SPECTA - Universitas Muhammadiyah Surakarta",
+      "role": "UI/UX Designer",
+      "tools": ["Figma"],
       "link": "https://www.example.com"
     }
   }
