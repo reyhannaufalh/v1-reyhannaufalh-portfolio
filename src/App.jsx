@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
 import Portfolio from "./Portfolio";
 import Layout from "./components/Layout";
 import ProjectDetails from "./components/ProjectDetails";
+import HomePage from "./HomePage";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
           path="/"
           element={
             <Layout>
-              <Home />
+              <HomePage />
             </Layout>
           }
         />

@@ -25,7 +25,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section className="container flex flex-col items-center justify-center gap-16 py-12">
+      <section className="container relative z-10 flex flex-col items-center justify-center gap-16 py-12">
         <div className="flex flex-col items-center">
           <h1 className="font-semibold text-5xl text-center max-w-5xl leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500 mb-3">
             The work I have done
@@ -43,39 +43,39 @@ export default function Portfolio() {
               onChange={handleSearchChange}
             />
           </div>
-        </div>
 
-        <div className="flex gap-4">
-          <button
-            className={`w-48 rounded-full border border-white shadow-neutral-500 font-semibold py-3 bg-gradient-to-tr ${
-              selectedTag === "All"
-                ? "from-purple-800 to-purple-500 shadow-md"
-                : "bg-neutral-800"
-            }`}
-            onClick={() => handleTagChange("All")}
-          >
-            All Projects
-          </button>
-          <button
-            className={`w-48 rounded-full border border-white shadow-neutral-500 font-semibold py-3 ${
-              selectedTag === "Web Development"
-                ? "bg-gradient-to-tr from-purple-800 to-purple-500 shadow-md"
-                : "bg-neutral-800"
-            }`}
-            onClick={() => handleTagChange("Web Development")}
-          >
-            Web Development
-          </button>
-          <button
-            className={`w-48 rounded-full border border-white shadow-neutral-500 font-semibold py-3 ${
-              selectedTag === "UI/UX Design"
-                ? "bg-gradient-to-tr from-purple-800 to-purple-500 shadow-md"
-                : "bg-neutral-800"
-            }`}
-            onClick={() => handleTagChange("UI/UX Design")}
-          >
-            UI/UX Design
-          </button>
+          <div className="flex gap-4">
+            <button
+              className={`w-48 rounded-full border border-white shadow-neutral-500 font-semibold py-3 bg-gradient-to-tr ${
+                selectedTag === "All"
+                  ? "from-purple-800 to-purple-500 shadow-md"
+                  : "bg-neutral-800"
+              }`}
+              onClick={() => handleTagChange("All")}
+            >
+              All Projects
+            </button>
+            <button
+              className={`w-48 rounded-full border border-white shadow-neutral-500 font-semibold py-3 ${
+                selectedTag === "Web Development"
+                  ? "bg-gradient-to-tr from-purple-800 to-purple-500 shadow-md"
+                  : "bg-neutral-800"
+              }`}
+              onClick={() => handleTagChange("Web Development")}
+            >
+              Web Development
+            </button>
+            <button
+              className={`w-48 rounded-full border border-white shadow-neutral-500 font-semibold py-3 ${
+                selectedTag === "UI/UX Design"
+                  ? "bg-gradient-to-tr from-purple-800 to-purple-500 shadow-md"
+                  : "bg-neutral-800"
+              }`}
+              onClick={() => handleTagChange("UI/UX Design")}
+            >
+              UI/UX Design
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 lg:grid-cols-3">
