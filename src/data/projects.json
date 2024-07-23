@@ -11,7 +11,7 @@
       "client": "Dinas Komunikasi dan Informatika Kabupaten Sukoharjo",
       "role": "Fullstack Web Developer",
       "tools": ["Laravel", "JQuery", "Tailwind CSS", "MySQL"],
-      "link": "https://solutif.spbe.sukoharjokab.go.id/"
+      "website": "https://solutif.spbe.sukoharjokab.go.id/"
     }
   },
   {
@@ -32,7 +32,7 @@
         "Tailwind CSS",
         "PostgreSQL"
       ],
-      "link": "https://www.example.com"
+      "website": "https://pu.kra.my.id/"
     }
   },
   {
@@ -49,7 +49,25 @@
       "client": "Lomba Akademik Mobile App Design IT SPECTA - Universitas Muhammadiyah Surakarta",
       "role": "UI/UX Designer",
       "tools": ["Figma"],
-      "link": "https://www.example.com"
+      "figma": "https://www.example.com",
+      "documentation": "https://www.example.com"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Narasee",
+    "slug": "narasee",
+    "tags": ["UI/UX Design", "Award"],
+    "date": "2024-06-11",
+    "image": "../public/images/project-image-1.png",
+    "details": {
+      "overview": "Sistem ini bertujuan untuk membantu pegawai pemerintahan dalam pembuatan surat dengan berbagai fitur yang dapat mempercepat proses pembuatannya. Harapannya sistem ini juga dapat membantu mempermudah dalam pengelolaan surat yang semakin banyak.",
+      "problem": "Di era digital saat ini, video presentasi merupakan cara yang efektif untuk memperkenalkan diri atau menyampaikan pesan kepada orang lain. Namun, tidak semua orang memiliki keahlian atau sumber daya untuk membuat presentasi video yang profesional dan menarik. Selain itu, proses merekam video sendiri juga bisa memakan waktu dan tenaga.",
+      "solution": "Untuk mengatasi tantangan ini, saya membuat desain aplikasi Narasee yang memanfaatkan kecerdasan buatan (AI) untuk membantu orang membuat video presentasi diri dengan mudah dan tanpa perlu proses perekaman yang rumit. Narasee adalah aplikasi inovatif yang memungkinkan pengguna membuat presentasi video yang menarik dan profesional hanya dengan beberapa langkah mudah. Aplikasi ini didukung oleh kecerdasan buatan (AI) yang canggih untuk menggabungkan potret diri pengguna, rekaman suara, dan skrip video menjadi sebuah presentasi video yang menggambarkan wajah dan suara pengguna secara otentik.",
+      "role": "UI/UX Designer",
+      "tools": ["Figma"],
+      "figma": "https://www.example.com",
+      "documentation": "https://www.example.com"
     }
   }
 ]

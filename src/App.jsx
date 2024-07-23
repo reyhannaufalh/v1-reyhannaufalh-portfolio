@@ -3,6 +3,7 @@ import Portfolio from "./Portfolio";
 import Layout from "./components/Layout";
 import ProjectDetails from "./components/ProjectDetails";
 import HomePage from "./HomePage";
+import About from "./About";
 
 const App = () => {
   return (
@@ -31,6 +32,15 @@ const App = () => {
           element={
             <Layout>
               <ProjectDetails />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <About />
             </Layout>
           }
         />

@@ -3,11 +3,16 @@ import {
   faLinkedin,
   faDribbble,
   faInstagram,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function ContactForm() {
   return (
-    <div className="container flex flex-col items-start justify-between gap-16 lg:flex-row xl:px-44">
+    <div
+      id="contactForm"
+      className="container flex flex-col items-start justify-between gap-16 lg:flex-row xl:px-44"
+    >
       <div className="flex flex-col w-full gap-6">
         <p className="text-3xl font-extrabold leading-tight xl:text-4xl">
           Let&apos;s work together
@@ -20,15 +25,21 @@ export default function ContactForm() {
         <div className="flex items-center gap-4">
           <p>Find me - </p>
 
-          <a href="">
+          <Link
+            target="_blank"
+            to="https://www.linkedin.com/in/reyhan-naufal-hakim-156235223/"
+          >
             <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
-          </a>
-          <a href="">
+          </Link>
+          <Link target="_blank" to="https://dribbble.com/reyhannaufal_4">
             <FontAwesomeIcon icon={faDribbble} className="text-2xl" />
-          </a>
-          <a href="">
+          </Link>
+          <Link target="_blank" to="https://www.instagram.com/reyhan_nh4/">
             <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
-          </a>
+          </Link>
+          <Link target="_blank" to="https://github.com/reyhannaufalh">
+            <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+          </Link>
         </div>
       </div>
 

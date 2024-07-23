@@ -10,6 +10,8 @@ import {
 import ProjectCard from "./components/ProjectCard";
 import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import Services from "./Services";
 
 export default function HomePage() {
   const dataProjects = projects.slice(0, 2);
@@ -78,49 +80,7 @@ export default function HomePage() {
         <hr className="w-full border border-neutral-900" />
       </div>
 
-      <div className="container flex flex-col items-center justify-between gap-16 lg:flex-row xl:px-44">
-        <div className="flex flex-col w-full duration-500 cursor-pointer hover:-translate-y-2 ">
-          <div className="w-48 h-48 bg-violet-500"></div>
-          <div className="flex flex-col gap-3 mt-6 text-neutral-300">
-            <p className="text-2xl font-bold text-white">
-              Fullstack Web Development
-            </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
-              quo.
-            </p>
-
-            <div>
-              <p className="font-semibold text-white">Tech-stack:</p>
-              <p>
-                TALL Stack (Tailwind CSS, Alpine JS, Laravel, Livewire), MERN
-                Stack (MongoDB, Express JS, React Node), Mysql
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col w-full duration-500 cursor-pointer hover:-translate-y-2">
-          <div className="w-48 h-48 bg-violet-500"></div>
-          <div className="flex flex-col gap-3 mt-6 text-neutral-300">
-            <p className="text-2xl font-bold text-white">
-              Fullstack Web Development
-            </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
-              quo.
-            </p>
-
-            <div>
-              <p className="font-semibold text-white">Tech-stack:</p>
-              <p>
-                TALL Stack (Tailwind CSS, Alpine JS, Laravel, Livewire), MERN
-                Stack (MongoDB, Express JS, React Node), Mysql
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Services />
 
       <div className="container my-20 xl:my-32">
         <hr className="w-full border border-neutral-900" />
@@ -141,12 +101,12 @@ export default function HomePage() {
           )}
         </div>
 
-        <a
-          href="#"
+        <Link
+          to="/portfolio"
           className="px-8 py-4 mx-auto font-semibold rounded-full w-fit sm:text-lg bg-violet-600"
         >
           View all works
-        </a>
+        </Link>
       </div>
 
       <div className="container my-20 xl:my-32">
@@ -156,6 +116,6 @@ export default function HomePage() {
       <ContactForm />
 
       <div className="mb-32"></div>
-    </>
+    </Services>
   );
 }

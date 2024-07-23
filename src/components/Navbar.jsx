@@ -22,10 +22,10 @@ export default function Navbar() {
             <Link to="/portfolio" className={getLinkClass("/portfolio")}>
               Works
             </Link>
-            {/* <Link to="/about" className={getLinkClass("/about")}>
+            <Link to="/about" className={getLinkClass("/about")}>
               About
             </Link>
-            <Link to="/awards" className={getLinkClass("/awards")}>
+            {/* <Link to="/awards" className={getLinkClass("/awards")}>
               Awards
             </Link> */}
           </div>

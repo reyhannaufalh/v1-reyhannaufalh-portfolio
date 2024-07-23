@@ -1,9 +1,8 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import projects from "../data/projects.json";
 import ProjectCard from "./ProjectCard";
 import ContactForm from "../ContactForm";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
+import ProjectLink from "./ProjectLink";
 
 export default function ProjectDetails() {
   const { url } = useParams();
@@ -12,11 +11,6 @@ export default function ProjectDetails() {
   if (!project) {
     return <p>Project not found</p>;
   }
-
-  const formattedDate = new Intl.DateTimeFormat("id-ID", {
-    year: "numeric",
-    month: "long",
-  }).format(new Date(project.date));
 
   const projectExceptThis = projects.filter((p) => p.slug !== url);
 
@@ -39,21 +33,24 @@ export default function ProjectDetails() {
           </h1>
 
           <div className="flex gap-4 mt-12">
-            <Link
-              to={project.details.link}
-              target="_blank"
-              className="px-8 py-4 font-semibold rounded-full sm:text-lg bg-violet-600"
-            >
-              Live Website{" "}
-              <FontAwesomeIcon icon={faCircleRight} className="ml-2" />
-            </Link>
-            <Link
-              to={project.details.link}
-              target="_blank"
-              className="px-8 py-4 font-semibold rounded-full sm:text-lg"
-            >
-              Contact me
-            </Link>
+            {project.details.website && (
+              <ProjectLink url={project.details.website} text="Live Website" />
+            )}
+            {project.details.figma && (
+              <ProjectLink url={project.details.figma} text="Figma Prototype" />
+            )}
+            {project.details.github && (
+              <ProjectLink
+                url={project.details.github}
+                text="Github Repository"
+              />
+            )}
+            {project.details.documentation && (
+              <ProjectLink
+                url={project.details.documentation}
+                text="Documentation"
+              />
+            )}
           </div>
         </div>
 

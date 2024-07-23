@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 export default function ProjectCard(data) {
   const { name, slug, tags, details, image } = data.data;
 
+  const imageSrc = image ?? "../images/project-image-1.png";
+
   return (
     <Link
       to={`/projects/${slug}`}
       className="col-span-2 overflow-hidden duration-500 lg:col-span-1 bg-neutral-900 rounded-2xl"
     >
       <div>
-        <img src="../images/project-image-1.png" alt="thumb" className="" />
+        <img src={imageSrc} alt="thumb" className="" />
       </div>
 
       <div className="p-6">
