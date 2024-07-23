@@ -10,7 +10,6 @@ import {
 import ProjectCard from "./components/ProjectCard";
 import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import Services from "./Services";
 
 export default function HomePage() {
@@ -116,6 +115,6 @@ export default function HomePage() {
       <ContactForm />
 
       <div className="mb-32"></div>
-    </Services>
+    </>
   );
 }
