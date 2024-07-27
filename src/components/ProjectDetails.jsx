@@ -12,7 +12,7 @@ export default function ProjectDetails() {
     return <p>Project not found</p>;
   }
 
-  const projectExceptThis = projects.filter((p) => p.slug !== url);
+  const projectExceptThis = projects.filter((p) => p.slug !== url).slice(0, 2);
 
   return (
     <>
@@ -32,7 +32,7 @@ export default function ProjectDetails() {
             {project.name}
           </h1>
 
-          <div className="flex gap-4 mt-12">
+          <div className="flex flex-col gap-4 mt-12 sm:flex-row">
             {project.details.website && (
               <ProjectLink url={project.details.website} text="Live Website" />
             )}
@@ -51,11 +51,17 @@ export default function ProjectDetails() {
                 text="Documentation"
               />
             )}
+            {project.details.api_documentation && (
+              <ProjectLink
+                url={project.details.api_documentation}
+                text="API Documentation"
+              />
+            )}
           </div>
         </div>
 
         <div className="flex w-full place-content-center">
-          <div className="w-full p-6 border-2 border-neutral-700 rounded-2xl">
+          <div className="w-full p-3 border-2 xl:p-6 border-neutral-700 rounded-2xl">
             <img
               src={project.image}
               alt={project.name}
@@ -97,6 +103,24 @@ export default function ProjectDetails() {
             <p className="leading-relaxed text-neutral-300">
               {project.details.solution}
             </p>
+          </div>
+        )}
+
+        {project.details.job_description && (
+          <div>
+            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+              Job Description
+            </h5>
+
+            <p className="mb-3 font-semibold">Role: {project.details.role}</p>
+
+            <ol className="pl-5 space-y-2 list-disc">
+              {project.details.job_description.map((job, index) => (
+                <li key={index} className="text-neutral-300">
+                  {job}
+                </li>
+              ))}
+            </ol>
           </div>
         )}
 

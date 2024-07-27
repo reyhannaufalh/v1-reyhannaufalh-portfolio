@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -8,6 +10,31 @@ import {
 import { Link } from "react-router-dom";
 
 export default function ContactForm() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_jdspbb5",
+        "template_zljsr3x",
+        form.current,
+        "4RDfa8gwKoxTOKUkD"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message, please try again.");
+        }
+      );
+  };
+
   return (
     <div
       id="contactForm"
@@ -44,8 +71,8 @@ export default function ContactForm() {
       </div>
 
       <form
-        action="mailto:reyhannaufal.h@gmail.com"
-        method="post"
+        ref={form}
+        onSubmit={sendEmail}
         className="flex flex-col w-full gap-6"
       >
         <input
@@ -60,15 +87,12 @@ export default function ContactForm() {
           placeholder="Email"
           className="w-full px-6 py-5 bg-neutral-900 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500"
         />
-
         <textarea
           name="message"
-          id=""
           className="w-full px-6 py-5 bg-neutral-900 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500"
           placeholder="Your message..."
           rows="4"
         ></textarea>
-
         <button
           type="submit"
           className="px-8 py-4 font-semibold w-fit sm:text-lg bg-violet-600"

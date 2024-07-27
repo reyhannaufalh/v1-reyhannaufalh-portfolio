@@ -19,7 +19,16 @@ export default function Navbar() {
             <Link to="/" className={getLinkClass("/")}>
               Home
             </Link>
-            <Link to="/portfolio" className={getLinkClass("/portfolio")}>
+            <Link
+              to="/portfolio"
+              className={getLinkClass("/portfolio")}
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                });
+              }}
+            >
               Works
             </Link>
             <Link to="/about" className={getLinkClass("/about")}>

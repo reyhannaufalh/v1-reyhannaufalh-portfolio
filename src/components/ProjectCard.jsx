@@ -10,10 +10,15 @@ export default function ProjectCard(data) {
   return (
     <Link
       to={`/projects/${slug}`}
-      className="col-span-2 overflow-hidden duration-500 lg:col-span-1 bg-neutral-900 rounded-2xl"
+      className="col-span-2 overflow-hidden duration-500 lg:col-span-1 bg-neutral-900 rounded-2xl group"
+      onClick={() => window.scrollTo(0, 0)}
     >
-      <div>
-        <img src={imageSrc} alt="thumb" className="" />
+      <div className="overflow-hidden bg-red-300 aspect-video">
+        <img
+          src={imageSrc}
+          alt="thumb"
+          className="object-cover w-full h-full transition-transform duration-500 transform group-hover:scale-105"
+        />
       </div>
 
       <div className="p-6">

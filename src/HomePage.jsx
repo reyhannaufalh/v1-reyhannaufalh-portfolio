@@ -27,16 +27,22 @@ export default function HomePage() {
             architecto natus, vero voluptate unde praesentium similique totam in
           </p>
 
-          <div className="flex gap-4">
-            <a
-              href="#"
-              className="px-8 py-4 font-semibold rounded-full sm:text-lg bg-violet-600"
+          <div className="flex flex-col gap-4 sm:flex-row">
+            <Link
+              to="/portfolio"
+              className="flex items-center justify-center px-8 py-4 font-semibold rounded-full sm:text-lg bg-violet-600"
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  left: 0,
+                });
+              }}
             >
               View my works
-            </a>
+            </Link>
             <a
-              href="#"
-              className="px-8 py-4 font-semibold rounded-full sm:text-lg"
+              href="#contactForm"
+              className="flex items-center justify-center px-8 py-4 font-semibold rounded-full sm:text-lg"
             >
               Contact me
             </a>
@@ -65,7 +71,7 @@ export default function HomePage() {
 
         <div className="flex items-center justify-center min-w-[400px] max-w-[600px] h-full overflow-hidden rounded-t-full rounded-b-full bg-neutral-900 max-h-[550px] pt-32 relative">
           <img
-            src="../images/reyhan-grayscale.png"
+            src="/images/reyhan-grayscale.png"
             alt="thumb"
             className="z-10 object-cover scale-125 xl:scale-100"
           />
@@ -103,6 +109,12 @@ export default function HomePage() {
         <Link
           to="/portfolio"
           className="px-8 py-4 mx-auto font-semibold rounded-full w-fit sm:text-lg bg-violet-600"
+          onClick={() => {
+            window.scroll({
+              top: 0,
+              left: 0,
+            });
+          }}
         >
           View all works
         </Link>
