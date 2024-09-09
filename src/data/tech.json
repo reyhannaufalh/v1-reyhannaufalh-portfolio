@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Laravel",
+    "slug": "laravel",
+    "image": "https://laravel.com/img/logomark.min.svg"
+  },
+  {
+    "name": "Livewire",
+    "slug": "livewire",
+    "image": "https://www.iocod.com/section/stack/Livewire.webp"
+  },
+  {
+    "name": "React",
+    "slug": "react",
+    "image": "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png"
+  },
+  {
+    "name": "Next JS",
+    "slug": "next-js",
+    "image": "https://cdn1.iconfinder.com/data/icons/akar-vol-1/24/nextjs-fill-128.png"
+  },
+  {
+    "name": "Express JS",
+    "slug": "express-js",
+    "image": "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
+  },
+  {
+    "name": "Nest JS",
+    "slug": "nest-js",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6x0Uo42KNADpBTujOUvn8nChWNcyPfsRSQ&s"
+  },
+  {
+    "name": "Tailwind CSS",
+    "slug": "tailwind-css",
+    "image": "https://img.icons8.com/?size=100&id=x7XMNGh2vdqA&format=png&color=000000"
+  },
+  {
+    "name": "Bootstrap",
+    "slug": "bootstrap",
+    "image": "https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000"
+  },
+  {
+    "name": "Docker",
+    "slug": "docker",
+    "image": "https://img.icons8.com/?size=100&id=22813&format=png&color=000000"
+  },
+  {
+    "name": "Figma",
+    "slug": "figma",
+    "image": "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000"
+  }
+]
