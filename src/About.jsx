@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import ContactForm from "./ContactForm";
 import Services from "./Services";
 import AchievementLink from "./components/AchievementLink";
+import tech from "./data/tech.json";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 export default function About() {
   return (
@@ -40,6 +42,36 @@ export default function About() {
       </div>
 
       <Services />
+
+      <div className="container my-20 xl:my-32">
+        <hr className="w-full border border-neutral-900" />
+      </div>
+
+      {/* Tech */}
+      <div className="container flex flex-col items-center gap-16 xl:px-44">
+        <h1 className="max-w-2xl text-5xl font-extrabold leading-tight xl:text-6xl">
+          Technology I use.
+        </h1>
+
+        <div className="flex flex-wrap justify-center gap-4">
+          {tech.map((item) => (
+            <div
+              key={item.slug}
+              className="flex items-center justify-center p-3 duration-500 bg-white rounded-full hover:-translate-y-2"
+              data-tooltip-id={item.slug}
+            >
+              <img
+                src={item.image}
+                className="block w-10 h-10"
+                alt={item.name}
+              />
+
+              <ReactTooltip id={item.slug} place="bottom" content={item.name} />
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Tech */}
 
       <div className="container my-20 xl:my-32">
         <hr className="w-full border border-neutral-900" />

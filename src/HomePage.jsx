@@ -16,15 +16,22 @@ export default function HomePage() {
   const dataProjects = projects.slice(0, 2);
   return (
     <>
-      <div className="container flex flex-col items-center justify-between gap-16 mt-16 xl:mt-20 xl:flex-row xl:px-44">
-        <div className="flex flex-col w-full gap-8 xl:max-w-3xl">
-          <p className="text-5xl font-extrabold leading-tight lg:text-7xl">
-            A web developer with a design centric approach.
+      <div className="container flex items-center justify-center gap-16 mt-16 xl:mt-20 xl:flex-row xl:px-44">
+        <div className="flex flex-col items-center justify-center w-full gap-8 py-6 xl:max-w-3xl">
+          <p className="text-5xl font-extrabold leading-tight text-center lg:text-7xl">
+            A{" "}
+            <span className="italic text-violet-500 text-playfair">
+              web developer
+            </span>{" "}
+            with a{" "}
+            <span className="italic text-pink-400 text-playfair">design</span>{" "}
+            centric approach.
           </p>
 
-          <p className=" text-neutral-300">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-            architecto natus, vero voluptate unde praesentium similique totam in
+          <p className="text-center text-neutral-300">
+            Passionate about crafting intuitive digital experiences. I{`'`}m
+            dedicated to building not just functional websites, but also
+            user-friendly interfaces that delight and engage.
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row">
@@ -69,7 +76,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center min-w-[400px] max-w-[600px] h-full overflow-hidden rounded-t-full rounded-b-full bg-neutral-900 max-h-[550px] pt-32 relative">
+        {/* <div className="flex items-center justify-center min-w-[400px] max-w-[600px] h-full overflow-hidden rounded-t-full rounded-b-full bg-neutral-900 max-h-[550px] pt-32 relative">
           <img
             src="/images/reyhan-grayscale.png"
             alt="thumb"
@@ -78,7 +85,7 @@ export default function HomePage() {
 
           <div className="absolute -bottom-10 left-0 right-0 rounded-full w-[400px] h-[400px] bg-violet-600"></div>
           <div className="absolute -bottom-10 left-4 right-0 rounded-full w-[350px] h-[350px] bg-violet-700"></div>
-        </div>
+        </div> */}
       </div>
 
       <div className="container my-20 xl:my-32">
@@ -93,7 +100,7 @@ export default function HomePage() {
 
       <div className="container flex flex-col gap-16 xl:px-44">
         <h1 className="max-w-2xl text-5xl font-extrabold leading-tight xl:text-6xl">
-          I help move your business forward with design.
+          Crafting intuitive digital experiences.
         </h1>
 
         <div className="grid w-full grid-cols-2 gap-8">

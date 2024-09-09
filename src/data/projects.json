@@ -7,19 +7,22 @@
     "date": "2019-01-01",
     "image": "/images/solutif.png",
     "details": {
-      "overview": "SOLUTIF merupakan sistem yang mengkoordinir pertanyaan maupun keluhan atas aplikasi-aplikasi yang bersangkutan dan dapat memberikan solusi bagi permasalahan maupun pertanyaan tersebut; memberikan peluang dan mewujudkan kolaborasi antar instansi pemerintah dalam melaksanakan urusan dan tugas pemerintahan untuk mencapai tujuan bersama; dan meningkatkan kualitas dan jangkauan pelayanan publik kepada pegawai maupun masyarakat.",
+      "overview": "SOLUTIF is a system that coordinates questions and complaints about the applications concerned and can provide solutions to these problems and questions; provide opportunities and realize collaboration between government agencies in carrying out government affairs and tasks to achieve common goals; and improve the quality and range of public services to employees and the community.",
       "job_description": [
-        "Pengembangan Frontend: Menggunakan Tailwind CSS dan jQuery untuk mengimplementasikan desain antarmuka pengguna yang responsif.",
-        "Slicing UI: Menerjemahkan desain dari tim UI/UX ke dalam kode HTML dan CSS yang terstruktur dan efisien.",
-        "Pengembangan Backend: Membangun logika bisnis dan layanan server menggunakan Laravel, memastikan performa aplikasi yang optimal.",
-        "Integrasi API: Mengimplementasikan dan mengelola RESTful APIs untuk mendukung komunikasi antara frontend dan backend.",
-        "Pemeliharaan Aplikasi: Melakukan debugging dan pemeliharaan untuk memastikan aplikasi berjalan lancar."
+        "Frontend Development: Using Tailwind CSS and jQuery to implement responsive user interface design.",
+        "UI Slicing: Translating designs from the UI/UX team into structured and efficient HTML and CSS code.",
+        "Backend Development: Building business logic and server services using Laravel, ensuring optimal application performance.",
+        "API Integration: Implement and manage RESTful APIs to support communication between frontend and backend.",
+        "Application Maintenance: Perform debugging and maintenance to ensure the application runs smoothly."
       ],
       "client": "Dinas Komunikasi dan Informatika Kabupaten Sukoharjo",
       "role": "Fullstack Web Developer",
       "tools": ["Laravel", "JQuery", "Tailwind CSS", "MySQL"],
-      "website": "https://solutif.spbe.sukoharjokab.go.id/",
-      "api_documentation": "https://documenter.getpostman.com/view/23051389/2s93sjUp9q#db3e511c-d6a0-4c72-bcaa-f26738561188"
+      "links": {
+        "website": "https://solutif.spbe.sukoharjokab.go.id/",
+        "api_documentation": "https://documenter.getpostman.com/view/23051389/2s93sjUp9q#db3e511c-d6a0-4c72-bcaa-f26738561188",
+        "manual_book": "https://drive.google.com/file/d/1ezBkvLoe6uTuJ3XdJP32EbeNMVjQf_Rr/view"
+      }
     }
   },
   {
@@ -30,7 +33,7 @@
     "date": "2019-01-02",
     "image": "/images/penatausahaan.png",
     "details": {
-      "overview": "Sistem ini bertujuan untuk membantu pegawai pemerintahan dalam pembuatan surat dengan berbagai fitur yang dapat mempercepat proses pembuatannya. Harapannya sistem ini juga dapat membantu mempermudah dalam pengelolaan surat yang semakin banyak.",
+      "overview": "This system aims to assist government employees in making letters with various features that can speed up the process. It is hoped that this system can also help facilitate the management of more and more letters.",
       "client": "Dinas Komunikasi dan Informatika Kabupaten Karanganyar",
       "role": "Fullstack Web Developer",
       "tools": [
@@ -40,7 +43,9 @@
         "Tailwind CSS",
         "PostgreSQL"
       ],
-      "website": "https://pu.kra.my.id/"
+      "links": {
+        "website": "https://sp2d.karanganyarkab.go.id/"
+      }
     }
   },
   {
@@ -49,16 +54,57 @@
     "slug": "gurune-ai",
     "tags": ["UI/UX Design", "Award"],
     "date": "2024-06-11",
-    "image": "/images/project-image-1.png",
+    "image": "/images/gurune-ai.png",
     "details": {
-      "overview": "Sistem ini bertujuan untuk membantu pegawai pemerintahan dalam pembuatan surat dengan berbagai fitur yang dapat mempercepat proses pembuatannya. Harapannya sistem ini juga dapat membantu mempermudah dalam pengelolaan surat yang semakin banyak.",
-      "problem": "Dalam konteks era kota pintar (smart city), pendidikan memainkan peran kunci dalam mempersiapkan generasi mendatang untuk menghadapi dinamika kompleks masyarakat modern yang semakin terhubung dan terotomatisasi. Namun, tantangan yang dihadapi oleh sistem pendidikan saat ini tetap signifikan, terutama dalam hal menyediakan pengalaman pembelajaran yang efektif, inklusif, dan beragam bagi setiap siswa. Terutama, di tengah kemajuan teknologi informasi dan komunikasi (TIK), masih ada ketidakseimbangan dalam akses terhadap materi pembelajaran yang berkualitas, serta kurangnya adaptasi terhadap gaya pembelajaran yang beragam. Dalam visi kota pintar, di mana infrastruktur dan layanan didukung oleh teknologi digital untuk meningkatkan kualitas hidup warga, pendidikan harus menjadi bagian integral dari transformasi ini.",
-      "solution": "GuruneAI hadir sebagai solusi inovatif dalam mengintegrasikan pendidikan dalam konteks kota pintar. GuruneAI bertujuan untuk merampingkan pengalaman pembelajaran dengan memanfaatkan kecerdasan buatan (AI) dan teknologi terkini lainnya untuk menciptakan lingkungan pembelajaran yang adaptif, inklusif, dan interaktif. Dengan menghadirkan akses terbuka terhadap beragam materi pembelajaran, GuruneAI memungkinkan siswa untuk mengeksplorasi topik-topik yang menarik minat mereka, menggali lebih dalam, dan mengembangkan kreativitas serta keterampilan yang diperlukan untuk sukses di masa depan.",
+      "overview": "GuruneAI is an innovative education app that utilizes artificial intelligence to create an adaptive and interactive learning experience in the era of smart cities. The app offers various learning methods such as text, video, audio, and interactive quizzes, allowing students to choose the way of learning that suits them best. With the Guru AI feature, students can ask questions at any time and get detailed explanations, while the available discussion forums help build a collaborative learning community. GuruneAI ensures the materials are always up-to-date, so students always get the latest and relevant information.",
+      "problem": "GuruneAI is an innovative education app that utilizes artificial intelligence to create an adaptive and interactive learning experience in the era of smart cities. The app offers various learning methods such as text, video, audio, and interactive quizzes, allowing students to choose the way of learning that suits them best. With the Guru AI feature, students can ask questions at any time and get detailed explanations, while the available discussion forums help build a collaborative learning community. GuruneAI ensures the materials are always up-to-date, so students always get the latest and relevant information.",
+      "solution": "GuruneAI hadir sebagai solusi untuk mengatasi tantangan dalam pendidikan di era kota pintar dengan menyediakan platform yang menggabungkan berbagai metode pembelajaran, mendukung interaksi yang lebih baik antara siswa dan materi, serta memastikan bahwa pembelajaran selalu relevan dan up-to-date. Dengan menggunakan teknologi AI, GuruneAI memungkinkan siswa untuk belajar sesuai dengan gaya mereka, mendapatkan jawaban secara mandiri, dan tetap terhubung dengan komunitas belajar.",
       "client": "Lomba Akademik Mobile App Design IT SPECTA - Universitas Muhammadiyah Surakarta",
       "role": "UI/UX Designer",
       "tools": ["Figma"],
-      "figma": "https://www.example.com",
-      "documentation": "https://www.example.com"
+      "links": {
+        "prototype": "https://www.figma.com/proto/rZlulKAaFwva1xaUeTnZn1/%5BIT-SPECTA%5D-GuruneAI?page-id=9%3A4&node-id=149-957&viewport=727%2C370%2C0.43&t=AfG6Yk1r07CGuOEn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=149%3A957",
+        "certificate": "https://drive.google.com/file/d/1RKg8D6sPZsdrC4UuyKNa9TWhweFc_lib/view?usp=sharing"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "PERKASA (PERangkat Kepegawaian Aktualisasi Sumberdaya Anda)",
+    "slug": "perkasa",
+    "tags": ["UI/UX Design", "Award"],
+    "date": "2023-06-11",
+    "image": "/images/perkasa.png",
+    "details": {
+      "overview": "The PERKASA application is designed to help HRDs and employees manage various aspects of human resources more efficiently and transparently. With key features such as attendance, requests, payroll, announcements, and manage employees, the app allows HRDs to monitor attendance, manage leave requests and salary increases, automatically calculate salaries, and deliver important announcements. Employees can also access personal information, submit requests, and view announcements easily, thereby increasing workplace satisfaction and productivity.",
+      "problem": "In the era of growing information technology, human resource information systems (HRIS) are important for companies to manage employees more effectively. HRIS helps HRD in managing employee data, attendance, performance appraisals, and payroll. According to Fahmi and Sari (2018), the implementation of HRIS can improve the efficiency of HRD performance. <br />A PwC study (2020) shows that 77% of companies worldwide have used digital technology, including HRIS, in their HR management, and these companies tend to have better financial performance. However, there are still many small companies and MSMEs in Indonesia that have not used this application, making the HR management process less efficient and transparent.",
+      "solution": "To overcome the problems in human resource management (HRM), we propose a solution in the form of an effective and efficient HRM application. This application is designed to assist HRD and employees with key features such as attendance, payroll, and employee needs/permit requests. Through this application, we hope to improve efficiency, accuracy, and transparency in managing employee data and company finances, as well as increase employee satisfaction and motivation.",
+      "role": "UI/UX Designer",
+      "tools": ["Figma"],
+      "links": {
+        "prototype": "https://www.figma.com/proto/61vCpmBE6r9Tb7fQnsuqOT/UI-Design-Aplikasi?node-id=272-5768&scaling=scale-down&page-id=2%3A904&starting-point-node-id=272%3A5768",
+        "certificate": "https://www.figma.com/proto/61vCpmBE6r9Tb7fQnsuqOT/UI-Design-Aplikasi?node-id=272-5768&scaling=scale-down&page-id=2%3A904&starting-point-node-id=272%3A5768",
+        "application": "https://drive.google.com/drive/folders/14404psSfD904PTLIjeaujbVVqeyrHZyc"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "Synauw",
+    "slug": "synauw",
+    "tags": ["UI/UX Design", "Award"],
+    "date": "2024-06-11",
+    "image": "/images/synauw.png",
+    "details": {
+      "overview": "Synauw is a mobile application designed to help users learn digital skills such as design and coding through structured and engaging online courses. The app presents directed and interactive material, so users can learn more effectively and not feel bored. With features such as quizzes, hands-on projects, and learning communities, Synauw ensures a learning experience that supports all-round digital skills development.",
+      "problem": "The main problem behind the creation of the Synauw app is the increasing need for digital skills in this modern era. Although many online tutorials are available, many people feel directionless in their learning process and find learning to be tedious. Synauw is here to provide a clear structure and a more engaging learning experience, making it easier for users to learn digital skills such as design and coding.",
+      "solution": "Synauw offers a solution by delivering structured and engaging online courses to learn digital skills. With a more targeted approach, Synauw helps users learn effectively without getting bored. Users can choose courses according to their interests, such as design or coding, and follow materials designed to improve their skills gradually. In addition, interactive features such as quizzes, hands-on projects, and learning communities help keep users motivated and provide support throughout the learning process.",
+      "role": "UI/UX Designer",
+      "tools": ["Figma"],
+      "links": {
+        "prototype": "https://www.figma.com/proto/4tUqBTyF6QMoNhkvY4YLmB/%5BBDC%5D-Synauw?page-id=7%3A6&node-id=21-226&viewport=455%2C32%2C0.16&t=aGpCiYKe15KYAon5-1&scaling=scale-down&starting-point-node-id=39%3A2477",
+        "certificate": "https://drive.google.com/file/d/1on7Ora83Amat3wF8p01BQwFxIi39WTRn/view"
+      }
     }
   },
   {
@@ -69,13 +115,15 @@
     "date": "2024-06-11",
     "image": "/images/narasee.png",
     "details": {
-      "overview": "Sistem ini bertujuan untuk membantu pegawai pemerintahan dalam pembuatan surat dengan berbagai fitur yang dapat mempercepat proses pembuatannya. Harapannya sistem ini juga dapat membantu mempermudah dalam pengelolaan surat yang semakin banyak.",
-      "problem": "Di era digital saat ini, video presentasi merupakan cara yang efektif untuk memperkenalkan diri atau menyampaikan pesan kepada orang lain. Namun, tidak semua orang memiliki keahlian atau sumber daya untuk membuat presentasi video yang profesional dan menarik. Selain itu, proses merekam video sendiri juga bisa memakan waktu dan tenaga.",
-      "solution": "Untuk mengatasi tantangan ini, saya membuat desain aplikasi Narasee yang memanfaatkan kecerdasan buatan (AI) untuk membantu orang membuat video presentasi diri dengan mudah dan tanpa perlu proses perekaman yang rumit. Narasee adalah aplikasi inovatif yang memungkinkan pengguna membuat presentasi video yang menarik dan profesional hanya dengan beberapa langkah mudah. Aplikasi ini didukung oleh kecerdasan buatan (AI) yang canggih untuk menggabungkan potret diri pengguna, rekaman suara, dan skrip video menjadi sebuah presentasi video yang menggambarkan wajah dan suara pengguna secara otentik.",
+      "overview": "Narasee is an AI-based app that makes it easy to create professional presentation videos without the need for recording or editing skills. Users simply upload a photo of themselves, a voice recording, and a video script, and Narasee automatically combines the elements into a compelling, ready-to-use video. With additional features such as background options, the app allows anyone to create personalized and memorable video presentations with ease.",
+      "problem": "In this digital age, presentation videos have become an effective way to introduce yourself or convey a message. However, not everyone has the skills or equipment to create a professional video. To overcome this, Narasee comes as an application that utilizes AI to help users create self-presentation videos easily. Users only need to upload photos, voice recordings, and the script they want to deliver. The app will automatically combine these elements into an attractive and professional presentation video, without the need for complicated recording or editing skills.",
+      "solution": "Narasee hadir sebagai solusi bagi individu yang ingin membuat video presentasi profesional tanpa perlu keahlian dalam perekaman atau pengeditan video. Dengan memanfaatkan teknologi AI, Narasee menggabungkan foto diri, rekaman suara, dan skrip video secara otomatis, sehingga proses pembuatan video menjadi cepat dan mudah. Aplikasi ini memungkinkan siapa saja, bahkan mereka yang tidak memiliki peralatan atau kemampuan editing, untuk menyampaikan pesan dengan cara yang menarik dan profesional.",
       "role": "UI/UX Designer",
       "tools": ["Figma"],
-      "figma": "https://www.example.com",
-      "documentation": "https://www.example.com"
+      "links": {
+        "prototype": "https://www.figma.com/proto/lM7v4sloLHVSCA32o4Rlan/%5BIT-SPECTA%5D-Narasee?page-id=0%3A1&node-id=57-1230&viewport=569%2C-95%2C0.31&t=Vp18fpvvX01jMkK9-1&scaling=scale-down&starting-point-node-id=57%3A1214&show-proto-sidebar=1",
+        "certificate": "https://drive.google.com/file/d/12QcCqgNXpUxPHeD5-uRY2rfi-MtnreBy/view"
+      }
     }
   }
 ]

@@ -1,5 +1,6 @@
 {
   "name": "portfolio-reyhan-2024",
+  "homepage": "http://v3421081.mhs.d3tiuns.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -22,6 +23,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
+    "react-tooltip": "^5.28.0",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {

@@ -17,13 +17,13 @@ export default function Services() {
             Lorem ipsum dolor sit amet.
           </p>
 
-          <div>
+          {/* <div>
             <p className="mb-2 font-semibold text-white">Tech-stack:</p>
             <p>
               TALL Stack (Tailwind CSS, Alpine JS, Laravel, Livewire), MERN
               Stack (MongoDB, Express JS, React JS, Node JS), mySQL, PostgreSQL
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -38,10 +38,10 @@ export default function Services() {
             Lorem ipsum dolor sit amet.
           </p>
 
-          <div>
+          {/* <div>
             <p className="mb-2 font-semibold text-white">Tools:</p>
             <p>Figma, Framer</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ export default function ProjectCard(data) {
       className="col-span-2 overflow-hidden duration-500 lg:col-span-1 bg-neutral-900 rounded-2xl group"
       onClick={() => window.scrollTo(0, 0)}
     >
-      <div className="overflow-hidden bg-red-300 aspect-video">
+      <div className="overflow-hidden bg-neutral-700 aspect-video">
         <img
           src={imageSrc}
           alt="thumb"

@@ -33,28 +33,40 @@ export default function ProjectDetails() {
           </h1>
 
           <div className="flex flex-col gap-4 mt-12 sm:flex-row">
-            {project.details.website && (
-              <ProjectLink url={project.details.website} text="Live Website" />
-            )}
-            {project.details.figma && (
-              <ProjectLink url={project.details.figma} text="Figma Prototype" />
-            )}
-            {project.details.github && (
+            {project.details.links.website && (
               <ProjectLink
-                url={project.details.github}
+                url={project.details.links.website}
+                text="Live Website"
+              />
+            )}
+            {project.details.links.prototype && (
+              <ProjectLink
+                url={project.details.links.prototype}
+                text="Figma Prototype"
+              />
+            )}
+            {project.details.links.github && (
+              <ProjectLink
+                url={project.details.links.github}
                 text="Github Repository"
               />
             )}
-            {project.details.documentation && (
+            {project.details.links.documentation && (
               <ProjectLink
-                url={project.details.documentation}
+                url={project.details.links.documentation}
                 text="Documentation"
               />
             )}
-            {project.details.api_documentation && (
+            {project.details.links.api_documentation && (
               <ProjectLink
-                url={project.details.api_documentation}
+                url={project.details.links.api_documentation}
                 text="API Documentation"
+              />
+            )}
+            {project.details.links.certificate && (
+              <ProjectLink
+                url={project.details.links.certificate}
+                text="Certificate"
               />
             )}
           </div>
