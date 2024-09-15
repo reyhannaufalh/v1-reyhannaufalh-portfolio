@@ -5,7 +5,7 @@ import { useState } from "react";
 import Sidebar from "../components/organisms/Sidebar";
 
 const Layout = ({ children }) => {
-  const [toggleSidebar, setToggleSidebar] = useState(true);
+  const [toggleSidebar, setToggleSidebar] = useState(false);
 
   return (
     <div>
