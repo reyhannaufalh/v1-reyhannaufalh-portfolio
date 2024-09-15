@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Portfolio from "./Portfolio";
-import Layout from "./components/Layout";
-import ProjectDetails from "./components/ProjectDetails";
-import HomePage from "./HomePage";
-import About from "./About";
+import Portfolio from "./components/templates/Portfolio";
+import Layout from "./layouts/Layout";
+import ProjectDetails from "./components/templates/ProjectDetails";
+import HomePage from "./components/templates/HomePage";
+import About from "./components/templates/About";
+import Certificates from "./components/templates/Certificates";
 
 const App = () => {
   return (
@@ -41,6 +42,15 @@ const App = () => {
           element={
             <Layout>
               <About />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/certificates"
+          element={
+            <Layout>
+              <Certificates />
             </Layout>
           }
         />

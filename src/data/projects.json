@@ -30,7 +30,7 @@
     "name": "Sistem Informasi Penatausaahan",
     "slug": "sistem-informasi-penatausaahan",
     "tags": ["Web Development"],
-    "date": "2019-01-02",
+    "date": "2024-08-10",
     "image": "/images/penatausahaan.png",
     "details": {
       "overview": "This system aims to assist government employees in making letters with various features that can speed up the process. It is hoped that this system can also help facilitate the management of more and more letters.",
@@ -69,7 +69,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "PERKASA (PERangkat Kepegawaian Aktualisasi Sumberdaya Anda)",
     "slug": "perkasa",
     "tags": ["UI/UX Design", "Award"],
@@ -89,7 +89,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Synauw",
     "slug": "synauw",
     "tags": ["UI/UX Design", "Award"],
@@ -108,7 +108,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Narasee",
     "slug": "narasee",
     "tags": ["UI/UX Design", "Award"],
@@ -123,6 +123,21 @@
       "links": {
         "prototype": "https://www.figma.com/proto/lM7v4sloLHVSCA32o4Rlan/%5BIT-SPECTA%5D-Narasee?page-id=0%3A1&node-id=57-1230&viewport=569%2C-95%2C0.31&t=Vp18fpvvX01jMkK9-1&scaling=scale-down&starting-point-node-id=57%3A1214&show-proto-sidebar=1",
         "certificate": "https://drive.google.com/file/d/12QcCqgNXpUxPHeD5-uRY2rfi-MtnreBy/view"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "SliceHub",
+    "slug": "slice-hub",
+    "tags": ["Web Development"],
+    "date": "2024-09-11",
+    "image": "/images/sliceHub.png",
+    "details": {
+      "overview": "Collection of User Interface slicing results from existing applications.",
+      "tools": ["Next JS", "Tailwind CSS"],
+      "links": {
+        "website": "https://slicehub.vercel.app/"
       }
     }
   }
