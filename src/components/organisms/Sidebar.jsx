@@ -25,26 +25,26 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
       <div className="w-full pt-6">
         <div className="flex flex-col">
           <Link
-            to={"#"}
+            to={"/"}
             className="inline-block w-full px-6 py-3 text-white rounded-lg bg-violet-500 hover:bg-violet-600"
           >
             Home
           </Link>
 
           <Link
-            to={"#"}
+            to={"/portfolio"}
             className="py-3 px-6 rounded-lg hover:bg-[rgba(0,0,0,0.1)] inline-block w-full"
           >
             Works
           </Link>
           <Link
-            to={"#"}
+            to={"/about"}
             className="py-3 px-6 rounded-lg hover:bg-[rgba(0,0,0,0.1)] inline-block w-full"
           >
             About
           </Link>
           <Link
-            to={"#"}
+            to={"/certificates"}
             className="py-3 px-6 rounded-lg hover:bg-[rgba(0,0,0,0.1)] inline-block w-full"
           >
             Certificates
