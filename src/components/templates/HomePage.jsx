@@ -16,11 +16,11 @@ export default function HomePage() {
   const dataProjects = projects.slice(0, 2);
   return (
     <>
-      <div className="container flex items-center justify-center gap-16 mt-8 sm:mt-16 xl:mt-20 xl:flex-row xl:px-44">
+      <div className="container flex items-center justify-center gap-16 mt-6 sm:mt-16 xl:mt-20 xl:flex-row xl:px-44">
         <div className="flex flex-col items-center justify-center w-full gap-8 py-6 text-left sm:text-center xl:max-w-3xl">
           <p className="text-5xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">
             A{" "}
-            <span className="italic text-violet-500 text-playfair">
+            <span className="italic text-violet-400 text-playfair">
               web developer
             </span>{" "}
             with a{" "}

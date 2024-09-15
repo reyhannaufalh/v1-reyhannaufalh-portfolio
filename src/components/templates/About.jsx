@@ -8,11 +8,18 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 export default function About() {
   return (
     <>
-      <div className="container flex flex-col items-center justify-center gap-16 mt-16 scroll-smooth xl:mt-20 xl:flex-row xl:px-44">
-        <div className="flex flex-col items-center justify-center w-full gap-8 text-center xl:max-w-4xl">
-          <p className="text-4xl font-extrabold leading-tight lg:text-7xl">
-            I’m a Fullstack Web Developer🧑‍💻 and UI/UX Designer🎨 living in
-            Indonesia.
+      <div className="container flex flex-col items-center justify-center gap-16 mt-6 sm:mt-16 scroll-smooth xl:mt-20 xl:flex-row xl:px-44">
+        <div className="flex flex-col items-center justify-center w-full gap-8 text-left sm:text-center xl:max-w-4xl">
+          <p className="text-4xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">
+            I’m a{" "}
+            <span className="italic text-violet-400 text-playfair">
+              Fullstack Web Developer
+            </span>
+            🧑‍💻 and{" "}
+            <span className="italic text-pink-500 text-playfair">
+              UI/UX Designer{" "}
+            </span>
+            🎨 living in Indonesia.
           </p>
 
           <p className="max-w-2xl text-neutral-300">
@@ -21,16 +28,13 @@ export default function About() {
             user-friendly interfaces that delight and engage.n
           </p>
 
-          <div className="flex items-center justify-center gap-4">
-            <Link
-              to="/portofolio"
-              className="px-8 py-4 font-semibold rounded-full sm:text-lg bg-violet-600"
-            >
+          <div className="flex flex-col justify-center w-full gap-4 sm:flex-row">
+            <button className="flex items-center justify-center w-full px-8 py-4 font-semibold rounded-full sm:w-fit sm:text-lg bg-violet-600">
               Download My CV
-            </Link>
+            </button>
             <a
               href="#contactForm"
-              className="px-8 py-4 font-semibold rounded-full sm:text-lg"
+              className="flex items-center justify-center w-full px-8 py-4 font-semibold rounded-full sm:w-fit sm:text-lg"
             >
               Contact me
             </a>
