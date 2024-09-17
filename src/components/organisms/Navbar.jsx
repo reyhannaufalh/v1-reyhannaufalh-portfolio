@@ -1,4 +1,5 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faBars, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -26,7 +27,7 @@ export default function Navbar({ toggleSidebar, setToggleSidebar }) {
   return (
     <>
       <nav
-        className={`container flex items-center bg-[rgba(0,0,0,0.1)] backdrop-blur-xl justify-between py-8 ${
+        className={`container flex items-center bg-[rgba(0,0,0,0.3)] backdrop-blur-xl justify-between py-8 ${
           isSticky
             ? "z-[999] fixed top-0 container left-0 right-0"
             : "bg-transparent w-full"
@@ -74,14 +75,23 @@ export default function Navbar({ toggleSidebar, setToggleSidebar }) {
           </div>
         </div>
 
-        <div className="flex gap-6 font-semibold">
+        <div className="flex gap-8 font-semibold">
           <Link
             to="https://www.linkedin.com/in/reyhan-naufal-hakim-156235223/"
             target="_blank"
+            className="flex items-center gap-2"
           >
+            <FontAwesomeIcon icon={faLinkedin} />
             LinkedIn
           </Link>
-          <a href="#">Resume</a>
+          <a
+            href="/CV_Reyhan_Naufal_Hakim.pdf"
+            className="flex items-center gap-2"
+            download
+          >
+            <FontAwesomeIcon icon={faDownload} />
+            Resume
+          </a>
         </div>
       </nav>
 

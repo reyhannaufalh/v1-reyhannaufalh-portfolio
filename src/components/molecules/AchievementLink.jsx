@@ -2,10 +2,10 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-export default function AchievementLink({ title, organization }) {
+export default function AchievementLink({ title, organization, link }) {
   return (
     <Link
-      to="#"
+      to={link}
       className="flex flex-col items-center justify-between w-full col-span-1 gap-5 px-10 py-6 duration-500 border-2 rounded-2xl lg:rounded-full lg:flex-row border-neutral-700 hover:bg-neutral-900 hover:scale-95"
     >
       <div>

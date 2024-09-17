@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ContactForm from "../organisms/ContactForm";
 import Services from "../organisms/Services";
 import AchievementLink from "../molecules/AchievementLink";
@@ -91,18 +90,22 @@ export default function About() {
           <AchievementLink
             title="1st place in Magic Competition 2023"
             organization="Himpunan Mahasiswa Manajemen Administrasi UNS"
+            link="/projects/perkasa"
           />
           <AchievementLink
             title="2nd place in Lomba Akademik IT SPECTA XI 2023"
             organization="Universitas Muhammadiyah Yogyakarta"
+            link="/projects/narasee"
           />
           <AchievementLink
             title="1st Best Submission Project of Mobile App Design"
             organization="Universitas Indonesia"
+            link="/projects/synauw"
           />
           <AchievementLink
             title="3rd place in Lomba Akademik IT SPECTA 2024"
             organization="Universitas Muhammadiyah Yogyakarta"
+            link="/projects/gurune-ai"
           />
         </div>
       </div>

@@ -65,7 +65,7 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
               </Link>
             </div>
 
-            <div className="mt-8 space-y-2">
+            {/* <div className="mt-8 space-y-2">
               <Link
                 to={"https://www.linkedin.com/in/reyhan-naufal-hakim/"}
                 className="flex items-center justify-between w-full py-3 pl-4 pr-4 mb-6 border-2 border-dashed border-neutral-600 rounded-2xl"
@@ -81,8 +81,9 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
                 <FontAwesomeIcon icon={faArrowRight} className="-rotate-45" />
               </Link>
 
-              <Link
-                to={"https://www.linkedin.com/in/reyhan-naufal-hakim/"}
+              <a
+                href="/CV_Reyhan_Naufal_Hakim.pdf"
+                download
                 className="flex items-center justify-between w-full py-3 pl-4 pr-4 mb-6 border-2 border-dashed border-neutral-600 rounded-2xl"
               >
                 <div>
@@ -94,8 +95,8 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
                 </div>
 
                 <FontAwesomeIcon icon={faDownload} />
-              </Link>
-            </div>
+              </a>
+            </div> */}
           </div>
         </aside>
       </div>

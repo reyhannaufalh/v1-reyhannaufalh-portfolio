@@ -4,7 +4,7 @@
     "name": "Solusi Teknologi Informasi (SOLUTIF)",
     "slug": "solusi-teknologi-informasi",
     "tags": ["Web Development"],
-    "date": "2019-01-01",
+    "date": "2022-08-10",
     "image": "/images/solutif.png",
     "details": {
       "overview": "SOLUTIF is a system that coordinates questions and complaints about the applications concerned and can provide solutions to these problems and questions; provide opportunities and realize collaboration between government agencies in carrying out government affairs and tasks to achieve common goals; and improve the quality and range of public services to employees and the community.",
@@ -30,7 +30,7 @@
     "name": "Sistem Informasi Penatausaahan",
     "slug": "sistem-informasi-penatausaahan",
     "tags": ["Web Development"],
-    "date": "2024-08-10",
+    "date": "2023-08-10",
     "image": "/images/penatausahaan.png",
     "details": {
       "overview": "This system aims to assist government employees in making letters with various features that can speed up the process. It is hoped that this system can also help facilitate the management of more and more letters.",
@@ -138,6 +138,29 @@
       "tools": ["Next JS", "Tailwind CSS"],
       "links": {
         "website": "https://slicehub.vercel.app/"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Sistem Penerbitan Surat Perintah Pencairan Dana",
+    "slug": "sistem-penerbitan-surat-perintah-pencairan-dana",
+    "tags": ["Web Development"],
+    "date": "2024-01-10",
+    "image": "/images/sp2d.png",
+    "details": {
+      "overview": "Merupakan sebuah sistem yang membantu pemerintahan dalam mengefektifkan proses penerbitan Surat Perintah Pencairan Dana di Kabupaten Karanganyar.",
+      "client": "Dinas Komunikasi dan Informatika Kabupaten Karanganyar",
+      "role": "Fullstack Web Developer",
+      "tools": [
+        "Laravel",
+        "Livewire",
+        "Alpine JS",
+        "Tailwind CSS",
+        "PostgreSQL"
+      ],
+      "links": {
+        "website": "https://sp2d.karanganyarkab.go.id/"
       }
     }
   }
