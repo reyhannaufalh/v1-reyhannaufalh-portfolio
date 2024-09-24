@@ -14,7 +14,7 @@ export default function ProjectDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axiosInstance.get(`/projectss/${url}`);
+        const response = await axiosInstance.get(`/projects/${url}`);
         setProject(response.data);
         console.log("API SUCCESS");
       } catch (error) {

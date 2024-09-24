@@ -12,7 +12,7 @@ export default function About() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axiosInstance.get("/techesss");
+        const response = await axiosInstance.get("/teches");
         setTechnologies(response.data);
       } catch (err) {
         console.log("API ERROR");
