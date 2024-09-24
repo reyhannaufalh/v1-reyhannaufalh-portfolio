@@ -16,6 +16,7 @@ export default function ProjectDetails() {
       try {
         const response = await axiosInstance.get(`/projectss/${url}`);
         setProject(response.data);
+        console.log("API SUCCESS");
       } catch (error) {
         console.log("API ERROR");
       }
@@ -28,8 +29,6 @@ export default function ProjectDetails() {
     let projects_json = projects_data.find((project) => project.slug === url);
     project = { data: projects_json };
   }
-
-  console.log(project, url);
 
   return (
     <>
@@ -91,7 +90,7 @@ export default function ProjectDetails() {
             </h5>
             <div className="leading-relaxed custom-editor text-neutral-300">
               <div
-                dangerouslySetInnerHTML={{ __html: project?.data.overview }}
+                dangerouslySetInnerHTML={{ __html: project?.data.result }}
               ></div>
             </div>
           </div>
@@ -104,7 +103,9 @@ export default function ProjectDetails() {
             </h5>
             <div className="leading-relaxed custom-editor text-neutral-300">
               <div
-                dangerouslySetInnerHTML={{ __html: project?.data.overview }}
+                dangerouslySetInnerHTML={{
+                  __html: project?.data.job_description,
+                }}
               ></div>
             </div>
           </div>
@@ -117,7 +118,7 @@ export default function ProjectDetails() {
             </h5>
             <div className="leading-relaxed custom-editor text-neutral-300">
               <div
-                dangerouslySetInnerHTML={{ __html: project?.data.overview }}
+                dangerouslySetInnerHTML={{ __html: project?.data.progress }}
               ></div>
             </div>
           </div>
