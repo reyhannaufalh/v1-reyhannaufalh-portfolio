@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import projects from "../../data/projects.json";
+// import projects from "../../data/projects.json";
 
 import {
   faLinkedin,
@@ -11,9 +11,30 @@ import ProjectCard from "../organisms/ProjectCard";
 import ContactForm from "../organisms/ContactForm";
 import { Link } from "react-router-dom";
 import Services from "../organisms/Services";
+import { useEffect, useState } from "react";
+import { axiosInstance } from "../../lib/axiosInstance";
+import projects_data from "../../data/projects.json";
 
 export default function HomePage() {
-  const dataProjects = projects.slice(0, 2);
+  let [projects, setProjects] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axiosInstance.get("/projects");
+        setProjects(response.data);
+      } catch (error) {
+        console.log("API ERROR");
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (!projects) projects = { data: projects_data };
+
+  const slicedProjects = projects ? projects.data.slice(0, 2) : [];
+
   return (
     <>
       <div className="container flex items-center justify-center gap-16 mt-6 sm:mt-16 xl:mt-20 xl:flex-row xl:px-44">
@@ -104,8 +125,8 @@ export default function HomePage() {
         </h1>
 
         <div className="grid w-full grid-cols-2 gap-8">
-          {dataProjects ? (
-            dataProjects.map((project) => (
+          {slicedProjects ? (
+            slicedProjects.map((project) => (
               <ProjectCard key={project.slug} data={project} />
             ))
           ) : (

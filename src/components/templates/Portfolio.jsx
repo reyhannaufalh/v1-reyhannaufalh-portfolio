@@ -1,18 +1,37 @@
-import projects from "../../data/projects.json";
-import { useState } from "react";
+// import projects from "../../data/projects.json";
+import { useEffect, useState } from "react";
 import ProjectCard from "../organisms/ProjectCard";
+import { axiosInstance } from "../../lib/axiosInstance";
+import projects_data from "../../data/projects.json";
 
 export default function Portfolio() {
   const [selectedTag, setSelectedTag] = useState("All");
+
+  let [projects, setProjects] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axiosInstance.get("/projects");
+        setProjects(response.data);
+      } catch (error) {
+        console.log("API ERROR");
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (!projects) projects = { data: projects_data };
 
   const handleTagChange = (tag) => {
     setSelectedTag(tag);
   };
 
-  const filteredProjects = projects
+  const filteredProjects = projects?.data
     .filter((project) => {
       const matchesTag =
-        selectedTag === "All" || project.tags.includes(selectedTag);
+        selectedTag === "All" || project.categories.includes(selectedTag);
       return matchesTag;
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -38,13 +57,13 @@ export default function Portfolio() {
             </button>
             <button
               className={`w-48 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 ${
-                selectedTag === "Web Development"
+                selectedTag === "Software Development"
                   ? "bg-gradient-to-tr from-violet-800 to-violet-500 border-0"
                   : "bg-transparent border-neutral-700"
               }`}
-              onClick={() => handleTagChange("Web Development")}
+              onClick={() => handleTagChange("Software Development")}
             >
-              Web Development
+              Software Development
             </button>
             <button
               className={`w-48 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 ${

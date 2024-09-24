@@ -3,8 +3,27 @@ import Services from "../organisms/Services";
 import AchievementLink from "../molecules/AchievementLink";
 import tech from "../../data/tech.json";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { useEffect, useState } from "react";
+import { axiosInstance } from "../../lib/axiosInstance";
 
 export default function About() {
+  let [technologies, setTechnologies] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axiosInstance.get("/techesss");
+        setTechnologies(response.data);
+      } catch (err) {
+        console.log("API ERROR");
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (!technologies) technologies = { data: tech };
+
   return (
     <>
       <div className="container flex flex-col items-center justify-center gap-16 mt-6 sm:mt-16 scroll-smooth xl:mt-20 xl:flex-row xl:px-44">
@@ -58,21 +77,26 @@ export default function About() {
         </h1>
 
         <div className="flex flex-wrap justify-center gap-4">
-          {tech.map((item) => (
-            <div
-              key={item.slug}
-              className="flex items-center justify-center p-3 duration-500 bg-white rounded-full hover:-translate-y-2"
-              data-tooltip-id={item.slug}
-            >
-              <img
-                src={item.image}
-                className="block w-10 h-10"
-                alt={item.name}
-              />
+          {technologies?.data.length > 0 &&
+            technologies?.data.map((item) => (
+              <div
+                key={item.slug}
+                className="flex items-center justify-center p-3 duration-500 bg-white rounded-full hover:-translate-y-2"
+                data-tooltip-id={item.slug}
+              >
+                <img
+                  src={item.image}
+                  className="block w-10 h-10"
+                  alt={item.name}
+                />
 
-              <ReactTooltip id={item.slug} place="bottom" content={item.name} />
-            </div>
-          ))}
+                <ReactTooltip
+                  id={item.slug}
+                  place="bottom"
+                  content={item.name}
+                />
+              </div>
+            ))}
         </div>
       </div>
       {/* Tech */}

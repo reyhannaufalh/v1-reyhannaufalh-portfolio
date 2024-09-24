@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 export default function ProjectCard(data) {
-  const { name, slug, tags, details, image } = data.data;
+  const { name, slug, categories, image } = data.data;
 
-  const imageSrc = image ?? "../images/project-image-1.png";
+  // const imageSrc = image ?? "../images/project-image-1.png";
 
   return (
     <Link
@@ -15,7 +15,7 @@ export default function ProjectCard(data) {
     >
       <div className="overflow-hidden bg-neutral-700 aspect-video">
         <img
-          src={imageSrc}
+          src={image}
           alt="thumb"
           className="object-cover w-full h-full transition-transform duration-500 transform group-hover:scale-105"
         />
@@ -23,7 +23,7 @@ export default function ProjectCard(data) {
 
       <div className="p-6">
         <div className="flex gap-3">
-          {tags.map((tag, index) => (
+          {categories.map((tag, index) => (
             <p
               key={index}
               className="px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-400"
@@ -39,7 +39,7 @@ export default function ProjectCard(data) {
           <h5 className="text-2xl font-bold leading-tight xl:text-3xl">
             {name}
           </h5>
-          <p className="truncate text-neutral-300">{details.overview}</p>
+          {/* <p className="truncate text-neutral-300">{details.overview}</p> */}
           <div className="flex items-center justify-center gap-2 w-fit">
             See details <FontAwesomeIcon icon={faCircleRight} />
           </div>
