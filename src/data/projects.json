@@ -5,49 +5,43 @@
     "slug": "solusi-teknologi-informasi-solutif",
     "categories": ["Software Development"],
     "date": "2022-10-08",
-    "image": "/images/solutif.png",
-    "client": "Dinas Komunikasi dan Informatika Kabupaten Sukoharjo",
-    "role": "Fullstack Developer",
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93S6FJ3K38Z2N1HMZ1GF00Q.png",
     "overview": "<p>SOLUTIF is a system that coordinates questions and complaints about the applications concerned and can provide solutions to these problems and questions; provide opportunities and realize collaboration between government agencies in carrying out government affairs and tasks to achieve common goals; and improve the quality and range of public services to employees and the community.</p>",
-    "job_description": "<ol><li>Frontend Development: Using Tailwind CSS and jQuery to implement responsive user interface design.</li><li>&nbsp;UI Slicing: Translating designs from the UI/UX team into structured and efficient HTML and CSS code.</li><li> Backend Development: Building business logic and server services using Laravel, ensuring optimal application performance.</li><li>API Integration: Implement and manage RESTful APIs to support communication between frontend and backend.</li><li> Application Maintenance: Perform debugging and maintenance to ensure the application runs smoothly.</li></ol>",
-    "tools": ["Laravel", "jQuery", "Tailwind CSS", "MySQL"],
+    "goal": null,
+    "client": "Dinas Komunikasi dan Informatika Kabupaten Sukoharjo",
+    "user_and_audience": null,
+    "job_description": "<p>Role: Fullstack Developer</p><ol><li>Frontend Development: Using Tailwind CSS and jQuery to implement responsive user interface design.</li><li>UI Slicing: Translating designs from the UI/UX team into structured and efficient HTML and CSS code.</li><li>Backend Development: Building business logic and server services using Laravel, ensuring optimal application performance.</li><li>API Integration: Implement and manage RESTful APIs to support communication between frontend and backend.</li><li>Application Maintenance: Perform debugging and maintenance to ensure the application runs smoothly.</li></ol><p>&nbsp;</p>",
+    "tools": ["Laravel", "jQuery", "Tailwind CSS", "MySQL", "Gitlab"],
+    "progress": null,
+    "result": null,
     "links": [
-      {
-        "name": "Website",
-        "url": "https://solutif.spbe.sukoharjokab.go.id/"
-      },
-      {
-        "name": "API Documentation",
-        "url": "https://documenter.getpostman.com/view/23051389/2s93sjUp9q#db3e511c-d6a0-4c72-bcaa-f26738561188"
-      },
-      {
-        "name": "Manual Book",
-        "url": "https://drive.google.com/file/d/1ezBkvLoe6uTuJ3XdJP32EbeNMVjQf_Rr/view"
-      }
+      { "name": "Website", "url": "https://solutif.spbe.sukoharjokab.go.id/" }
     ],
+    "galleries": [],
     "created_at": "2024-09-24T08:46:03.000000Z",
-    "updated_at": "2024-09-24T08:46:03.000000Z"
+    "updated_at": "2024-10-01T10:14:45.000000Z"
   },
   {
     "id": 2,
-    "name": "Sistem Informasi Penatausaahan",
-    "slug": "sistem-informasi-penatausaahan",
+    "name": "SPJ Online",
+    "slug": "spj-online",
     "categories": ["Software Development"],
     "date": "2023-08-10",
-    "image": "/images/penatausahaan.png",
-    "client": "Dinas Komunikasi dan Informatika Kabupaten Karanganyar",
-    "role": "Fullstack Developer",
-    "overview": "<p>This system aims to assist government employees in making letters with various features that can speed up the process. It is hoped that this system can also help facilitate the management of more and more letters.</p>",
-    "job_description": null,
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93S3SYH9EHNCVG88QFFNXTB.png",
+    "overview": "<p>This system can create two types of Surat Pertanggungjawaban (SPJ), namely Surat Ganti Uang (GU) and Surat Perintah Pencairan Dana (SPPD). This application is expected to make it easier for each employee or officer concerned to make letters with predetermined and uniform formats and conditions or the same between all related agencies in Karanganyar Regency.&nbsp;</p>",
+    "goal": null,
+    "client": "<p><a href=\"https://diskominfo.karanganyarkab.go.id/\"><strong>Dinas Komunikasi dan Informatika (Diskominfo)</strong></a>, which is located at Jl. Lawu No.385 B, Popongan, Karanganyar District, Karanganyar Regency, Central Java, has the task of being responsible for all forms of communication, information, and information technology in the region. Diskominfo has an important role in facilitating communication between the government and the community, as well as managing technology and information in the Karanganyar Regency area.&nbsp;</p>",
+    "user_and_audience": "<p>The users and audiences of this system are:</p><ol><li>Service admin played by regional apparatus (Dinas, Badan, Satuan, Inspectorate, Kecamatan, and Kelurahan)</li><li>Service users who are played by regional apparatus employees (Dinas, Badan, Units, Inspectorates, Districts, and Villages)</li></ol><p><br></p>",
+    "job_description": "<p><strong>Role: Fullstack Developer&nbsp;</strong></p><ul><li>Create interface designs by applying UI/UX principles to ensure optimal user experience</li><li>Build attractive and responsive user interfaces</li><li>Implement application business logic and manage databases</li><li>Optimize application performance to improve speed and scalability</li></ul><p><br></p>",
     "tools": ["Laravel", "Livewire", "Alpine.js", "Tailwind CSS", "PostgreSQL"],
+    "progress": "<h3>Development and Implementation</h3><p>At this stage, the team began building the SPJ Online application in accordance with the approved design. design that has been approved, the team ensures that the application development application development follows the guidelines set by Diskominfo, such as the use of a programming framework, appropriate database and security best practices. programming framework, appropriate database and security best practices. The team also reported the progress of the project to Diskominfo on a regular basis and communicated openly about developments, risks and risks. and communicate openly about developments, risks, and changes in the project. in the project.</p><p>The main features that I worked on include:</p><ol><li>Ganti Uang (GU) Creation and Management</li><li>Surat Perintah Pencairan Dana (SPPD) Creation and Management</li></ol>",
+    "result": "<p>After going through the process of making applications ranging from design design to application development, the SPJ Online can now be accessed directly. Access rights are only given to employees of Regional Apparatus Organizations (OPD) in Karanganyar Regency so that it cannot be accessed publicly.&nbsp;</p><p>Visit the site directly <a href=\"https://sp2d.karanganyarkab.go.id/login\">here</a>.</p>",
     "links": [
-      {
-        "name": "Website",
-        "url": "https://sp2d.karanganyarkab.go.id/"
-      }
+      { "name": "Website", "url": "https://sp2d.karanganyarkab.go.id/" }
     ],
+    "galleries": [],
     "created_at": "2024-09-24T09:53:22.000000Z",
-    "updated_at": "2024-09-24T09:53:22.000000Z"
+    "updated_at": "2024-10-01T10:13:17.000000Z"
   },
   {
     "id": 3,
@@ -55,41 +49,48 @@
     "slug": "guruneai",
     "categories": ["UI/UX Design", "Award"],
     "date": "2024-11-06",
-    "image": "/images/gurune-ai.png",
-    "client": "Lomba Akademik Mobile App Design IT SPECTA - Universitas Muhammadiyah Surakarta",
-    "role": null,
-    "overview": "<p>GuruneAI is an innovative education app that utilizes artificial intelligence to create an adaptive and interactive learning experience in the era of smart cities. The app offers various learning methods such as text, video, audio, and interactive quizzes, allowing students to choose the way of learning that suits them best. With the Guru AI feature, students can ask questions at any time and get detailed explanations, while the available discussion forums help build a collaborative learning community. GuruneAI ensures the materials are always up-to-date, so students always get the latest and relevant information.</p>",
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93SCTHKTQ3YSGNJFBFAC28T.png",
+    "overview": "<p>I participated in the IT SPECTA 2024 Mobile App Design Academic Competition organized by Universitas Muhammadiyah Yogyakarta with this project. I created an app called <strong>GuruneAI a modern learning app that utilizes AI to create an adaptive learning experience</strong> for students in the era of smart cities. GuruneAI offers a variety of learning methods, including text, video, audio, and interactive quizzes, allowing students to choose the way of learning that suits them best. Thanks to this innovation, I won first place, <strong>beating more than 30 other participants in the competition</strong>.</p>",
+    "goal": null,
+    "client": "<p>Competition name: Lomba Akademik Mobile App Design IT SPECTA</p><p>Organizer: Universitas Muhammadiyah Surakarta</p>",
+    "user_and_audience": null,
     "job_description": null,
-    "tools": [],
+    "tools": ["Figma"],
+    "progress": "<h3>Analisis kebutuhan</h3><p>Analisis kebutuhan untuk desain aplikasi GuruneAI mencakup informasi-informasi berikut yang dibutuhkan oleh pengguna:</p><p><strong>Materi Pembelajaran yang Beragam</strong></p><p>Pengguna membutuhkan akses terhadap materi pembelajaran yang beragam dan relevan dengan kebutuhan belajar mereka. Aplikasi harus menyediakan berbagai jenis materi pembelajaran, termasuk teks dan video, yang mencakup berbagai topik dan tingkat kesulitan.</p><p><strong>Bantuan dan Penjelasan Langsung</strong></p><p>Pengguna membutuhkan bantuan dan penjelasan langsung saat mengalami kesulitan atau kebingungan dalam belajar. Aplikasi harus menyediakan fitur chat dengan AI guru yang responsif dan mampu memberikan penjelasan serta jawaban atas pertanyaan pengguna dengan cepat dan akurat.</p><p><strong>Interaksi Belajar yang Dinamis</strong></p><p>Pengguna menginginkan pengalaman belajar yang interaktif dan menarik, bukan hanya sekadar membaca atau menonton. Aplikasi harus menyediakan fitur-fitur seperti percakapan dengan AI yang mensimulasikan interaksi dengan guru sungguhan, serta skenario percakapan yang relevan dengan materi pembelajaran.</p><p><strong>Kustomisasi Metode Pembelajaran</strong></p><p>Setiap pengguna memiliki preferensi metode pembelajaran yang berbeda-beda, seperti membaca, mendengar, atau melihat. Aplikasi harus memungkinkan pengguna untuk mengubah metode pembelajaran sesuai dengan preferensi mereka, baik dalam bentuk teks atau video.</p><h3>Analisis Permasalahan dan Solusi</h3><p>GuruneAI mengatasi beberapa masalah utama pendidikan:</p><ol><li>Metode belajar beragam: Menyediakan berbagai format pembelajaran dalam satu platform, memungkinkan siswa memilih metode yang sesuai.</li><li>Keterbatasan informasi: Fitur Guru AI memungkinkan siswa bertanya kapan saja melalui teks, foto, atau suara, mendapatkan jawaban yang dapat diubah menjadi video penjelasan.</li><li>Materi tidak diperbarui: GuruneAI memastikan materi pembelajaran selalu up-to-date dan relevan.</li><li>Kurangnya interaksi: Menyediakan forum diskusi untuk menciptakan komunitas belajar yang interaktif dan kolaboratif.</li></ol><h3>Pembuatan Wireframe</h3><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;gambar.png&quot;,&quot;filesize&quot;:49524,&quot;height&quot;:310,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/pb8o6RH5nCzvEe3uzx6981WDn1wfjB3g7x9vHqA2.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/pb8o6RH5nCzvEe3uzx6981WDn1wfjB3g7x9vHqA2.png&quot;,&quot;width&quot;:542}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;caption&quot;:&quot;Wireframe&quot;,&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/pb8o6RH5nCzvEe3uzx6981WDn1wfjB3g7x9vHqA2.png\"><img src=\"http://127.0.0.1:8000/storage/progress/pb8o6RH5nCzvEe3uzx6981WDn1wfjB3g7x9vHqA2.png\" width=\"542\" height=\"310\"><figcaption class=\"attachment__caption attachment__caption--edited\">Wireframe</figcaption></a></figure></p><h3>Pembuatan Desain Sistem</h3><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;gambar-1.png&quot;,&quot;filesize&quot;:24655,&quot;height&quot;:149,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/0q85WpoGiluXeslnsOFfstvBrlfJs8MLcYJB4esw.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/0q85WpoGiluXeslnsOFfstvBrlfJs8MLcYJB4esw.png&quot;,&quot;width&quot;:548}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;caption&quot;:&quot;Design System&quot;,&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/0q85WpoGiluXeslnsOFfstvBrlfJs8MLcYJB4esw.png\"><img src=\"http://127.0.0.1:8000/storage/progress/0q85WpoGiluXeslnsOFfstvBrlfJs8MLcYJB4esw.png\" width=\"548\" height=\"149\"><figcaption class=\"attachment__caption attachment__caption--edited\">Design System</figcaption></a></figure></p><h3>Pembuatan Hi-Fi Mockup</h3><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;gambar.png&quot;,&quot;filesize&quot;:167703,&quot;height&quot;:552,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/Dw6pFwQFflZikTpMIhhi3R1TEgVm0qnnGziLgaYt.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/Dw6pFwQFflZikTpMIhhi3R1TEgVm0qnnGziLgaYt.png&quot;,&quot;width&quot;:539}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;caption&quot;:&quot;Mockup&quot;,&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/Dw6pFwQFflZikTpMIhhi3R1TEgVm0qnnGziLgaYt.png\"><img src=\"http://127.0.0.1:8000/storage/progress/Dw6pFwQFflZikTpMIhhi3R1TEgVm0qnnGziLgaYt.png\" width=\"539\" height=\"552\"><figcaption class=\"attachment__caption attachment__caption--edited\">Mockup</figcaption></a></figure></p>",
+    "result": null,
     "links": [
       {
-        "name": "Prototype",
-        "url": "https://www.figma.com/proto/rZlulKAaFwva1xaUeTnZn1/%5BIT-SPECTA%5D-GuruneAI?page-id=9%3A4&node-id=149-957&viewport=727%2C370%2C0.43&t=AfG6Yk1r07CGuOEn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=149%3A957"
+        "name": "Figma Design",
+        "url": "https://www.figma.com/design/rZlulKAaFwva1xaUeTnZn1/%5BIT-SPECTA%5D-GuruneAI?m=auto&t=t5ao5GYkK3HZBGUH-6"
       },
       {
         "name": "Certificate",
         "url": "https://drive.google.com/file/d/1RKg8D6sPZsdrC4UuyKNa9TWhweFc_lib/view?usp=sharing"
       }
     ],
+    "galleries": [],
     "created_at": "2024-09-24T09:58:48.000000Z",
-    "updated_at": "2024-09-24T09:58:48.000000Z"
+    "updated_at": "2024-10-01T10:23:49.000000Z"
   },
   {
     "id": 4,
     "name": "PERKASA (PERangkat Kepegawaian Aktualisasi Sumberdaya Anda)",
     "slug": "perkasa-perangkat-kepegawaian-aktualisasi-sumberdaya-anda",
-    "categories": ["UI/UX Design", "Award"],
+    "categories": ["Award", "UI/UX Design"],
     "date": "2023-06-11",
-    "image": "/images/perkasa.png",
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93T44R7ZZBJZJXFPEGR5K0X.png",
+    "overview": "<p><br></p><p>1st place in the Smart Office Application Design Competition with the theme \u201cOptimalizing Technology For Achieving Smart Office in Digital Era\u201d. My team and I created the PERKASA application: Your Resource Actualization Staffing Tool which is designed to help HRDs and employees manage various aspects of human resources more efficiently and transparently. With key features such as attendance, requests, payroll, announcements, and manage employees, the app allows HRDs to monitor attendance, manage leave requests and salary increases, automatically calculate salaries, and deliver important announcements. Employees can also access personal information, submit requests, and view announcements easily, thereby increasing workplace satisfaction and productivity. With the application we created, we managed to become the first winner from 5 other teams that competed.</p>",
+    "goal": null,
     "client": "Magic 2023 - Universitas Sebelas Maret",
-    "role": "UI/UX Designer",
-    "overview": "<p>The PERKASA application is designed to help HRDs and employees manage various aspects of human resources more efficiently and transparently. With key features such as attendance, requests, payroll, announcements, and manage employees, the app allows HRDs to monitor attendance, manage leave requests and salary increases, automatically calculate salaries, and deliver important announcements. Employees can also access personal information, submit requests, and view announcements easily, thereby increasing workplace satisfaction and productivity.</p>",
+    "user_and_audience": null,
     "job_description": null,
     "tools": ["Figma"],
+    "progress": null,
+    "result": null,
     "links": [
       {
-        "name": "Prototype",
-        "url": "https://www.figma.com/proto/61vCpmBE6r9Tb7fQnsuqOT/UI-Design-Aplikasi?node-id=272-5768&scaling=scale-down&page-id=2%3A904&starting-point-node-id=272%3A5768"
+        "name": "Figma Design",
+        "url": "https://www.figma.com/design/61vCpmBE6r9Tb7fQnsuqOT/UI-Design-Aplikasi?m=auto&t=t5ao5GYkK3HZBGUH-6"
       },
       {
         "name": "Certificate",
@@ -100,8 +101,9 @@
         "url": "https://drive.google.com/drive/folders/14404psSfD904PTLIjeaujbVVqeyrHZyc"
       }
     ],
+    "galleries": [],
     "created_at": "2024-09-24T10:02:16.000000Z",
-    "updated_at": "2024-09-24T10:02:16.000000Z"
+    "updated_at": "2024-10-01T10:30:57.000000Z"
   },
   {
     "id": 5,
@@ -109,90 +111,133 @@
     "slug": "synauw",
     "categories": ["UI/UX Design", "Award"],
     "date": "2023-08-28",
-    "image": "/images/synauw.png",
-    "client": "Basic Design Class - Universitas Indonesia",
-    "role": "UI/UX Designer",
-    "overview": "<p>Synauw is a mobile application designed to help users learn digital skills such as design and coding through structured and engaging online courses. The app presents directed and interactive material, so users can learn more effectively and not feel bored. With features such as quizzes, hands-on projects, and learning communities, Synauw ensures a learning experience that supports all-round digital skills development.</p>",
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93SWNS66DBBTK5WFVHZ7X6R.png",
+    "overview": "<p><strong>1st Best Submission Project</strong> in Project Submission Basic Design Class with the theme \u201cUI/UX For Beginners: Designing with Figma\u201d organized by HMD Physics University of Indonesia. I created an application \u201cSynauw\u201d which is a mobile application designed to help users <strong>learn digital skills</strong> such as design and coding through structured and engaging online courses. The app presents directed and interactive material, so users can learn more effectively and not feel bored. With features such as quizzes, hands-on projects, and learning communities, Synauw ensures a learning experience that supports all-round digital skills development. With this application, I managed to become the <strong>first winner from 130+ other participants</strong> who competed.</p>",
+    "goal": null,
+    "client": "<p>Competition Name: Basic Design Class</p><p>Organizer: Universitas Indonesia</p>",
+    "user_and_audience": null,
     "job_description": null,
     "tools": ["Figma"],
+    "progress": null,
+    "result": null,
     "links": [
       {
-        "name": "Prototype",
-        "url": "https://www.figma.com/proto/4tUqBTyF6QMoNhkvY4YLmB/%5BBDC%5D-Synauw?page-id=7%3A6&node-id=21-226&viewport=455%2C32%2C0.16&t=aGpCiYKe15KYAon5-1&scaling=scale-down&starting-point-node-id=39%3A2477"
+        "name": "Figma Design",
+        "url": "https://www.figma.com/design/4tUqBTyF6QMoNhkvY4YLmB/%5BBDC%5D-Synauw?m=auto&t=t5ao5GYkK3HZBGUH-6"
       },
       {
         "name": "Certificate",
         "url": "https://drive.google.com/file/d/1on7Ora83Amat3wF8p01BQwFxIi39WTRn/view"
       }
     ],
+    "galleries": [],
     "created_at": "2024-09-24T10:06:03.000000Z",
-    "updated_at": "2024-09-24T10:06:03.000000Z"
+    "updated_at": "2024-10-01T10:27:20.000000Z"
   },
   {
     "id": 6,
     "name": "Narasee",
     "slug": "narasee",
-    "categories": ["UI/UX Design", "Award"],
+    "categories": ["Award", "UI/UX Design"],
     "date": "2024-06-11",
-    "image": "/images/narasee.png",
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93T1EMRFMRSQQ1DBMGWK9M9.png",
+    "overview": "<p><strong>2nd place in the Application Design Competition</strong> with the theme \u201cBuild Innovation Technology with AI\u201d. I created an app called <strong>Narasee </strong>which is an <strong>AI-based app that makes it easy to create professional presentation videos</strong> without the need for recording or editing skills. Users simply upload a photo of themselves, a voice recording, and a video script, and Narasee automatically combines the elements into a compelling, ready-to-use video. With additional features such as background options, the app allows anyone to create personalized and memorable video presentations with ease. With this app, <strong>I managed to come second out of 13 other competing teams</strong>.</p><p><br></p>",
+    "goal": null,
     "client": "Lomba Akademik Mobile App Design IT SPECTA - Universitas Muhammadiyah Surakarta",
-    "role": "UI/UX Designer",
-    "overview": "<p>Narasee is an AI-based app that makes it easy to create professional presentation videos without the need for recording or editing skills. Users simply upload a photo of themselves, a voice recording, and a video script, and Narasee automatically combines the elements into a compelling, ready-to-use video. With additional features such as background options, the app allows anyone to create personalized and memorable video presentations with ease.</p>",
+    "user_and_audience": null,
     "job_description": null,
     "tools": ["Figma"],
+    "progress": null,
+    "result": null,
     "links": [
       {
-        "name": "Prototype",
-        "url": "https://www.figma.com/proto/lM7v4sloLHVSCA32o4Rlan/%5BIT-SPECTA%5D-Narasee?page-id=0%3A1&node-id=57-1230&viewport=569%2C-95%2C0.31&t=Vp18fpvvX01jMkK9-1&scaling=scale-down&starting-point-node-id=57%3A1214&show-proto-sidebar=1"
+        "name": "Figma Design",
+        "url": "https://www.figma.com/design/lM7v4sloLHVSCA32o4Rlan/%5BIT-SPECTA%5D-Narasee?m=auto&t=t5ao5GYkK3HZBGUH-6"
       },
       {
         "name": "Certificate",
         "url": "https://drive.google.com/file/d/12QcCqgNXpUxPHeD5-uRY2rfi-MtnreBy/view"
       }
     ],
+    "galleries": [],
     "created_at": "2024-09-24T10:07:57.000000Z",
-    "updated_at": "2024-09-24T10:07:57.000000Z"
+    "updated_at": "2024-10-01T10:29:28.000000Z"
   },
   {
     "id": 7,
     "name": "SliceHub",
     "slug": "slicehub",
-    "categories": ["Software Development", "Learning"],
+    "categories": ["Learning", "Software Development"],
     "date": "2024-09-11",
-    "image": "/images/sliceHub.png",
-    "client": null,
-    "role": null,
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93T59R1Q9S88BVY10Y9KY9M.png",
     "overview": "<p>Collection of User Interface slicing results from existing applications.</p>",
+    "goal": null,
+    "client": null,
+    "user_and_audience": null,
     "job_description": null,
     "tools": ["Next.js", "Tailwind CSS"],
-    "links": [
-      {
-        "name": "Website",
-        "url": "https://slicehub.vercel.app/"
-      }
-    ],
+    "progress": null,
+    "result": null,
+    "links": [{ "name": "Website", "url": "https://slicehub.vercel.app/" }],
+    "galleries": [],
     "created_at": "2024-09-24T10:09:41.000000Z",
-    "updated_at": "2024-09-24T10:09:41.000000Z"
+    "updated_at": "2024-10-01T10:31:34.000000Z"
   },
   {
     "id": 8,
-    "name": "Sistem Penerbitan Surat Perintah Pencairan Dana",
-    "slug": "sistem-penerbitan-surat-perintah-pencairan-dana",
+    "name": "Sistem Penerbitan Surat Perintah Pencairan Dana (SP2D)",
+    "slug": "sistem-penerbitan-surat-perintah-pencairan-dana-sp2d",
     "categories": ["Software Development"],
     "date": "2024-01-10",
-    "image": "/images/sp2d.png",
-    "client": "Dinas Komunikasi dan Informatika Kabupaten Karanganyar",
-    "role": "Fullstack Developer",
-    "overview": "<p>Sistem yang membantu pemerintahan dalam mengefektifkan proses penerbitan Surat Perintah Pencairan Dana di Kabupaten Karanganyar.</p>",
-    "job_description": null,
-    "tools": ["Laravel", "Livewire", "Alpine.js", "Tailwind CSS", "PostgreSQL"],
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J93S5BA083EPFT8NBK24G8DP.png",
+    "overview": "<p>This system aims to replace the process of issuing a Surat Perintah Pencairan Dana (SP2D) which was previously done offline. The process includes the creation and submission of a Pay Order, document verification, and SP2D issuance. With the implementation of this system, <strong>around 80% of the SP2D issuance process can now be done online</strong>.&nbsp;</p>",
+    "goal": null,
+    "client": "<p><a href=\"https://diskominfo.karanganyarkab.go.id/\"><strong>Dinas Komunikasi dan Informatika (Diskominfo)</strong></a>, which is located at Jl. Lawu No.385 B, Popongan, Karanganyar District, Karanganyar Regency, Central Java, has the task of being responsible for all forms of communication, information, and information technology in the region. Diskominfo has an important role in facilitating communication between the government and the community, as well as managing technology and information in the Karanganyar Regency area.</p>",
+    "user_and_audience": "<p>&nbsp;Users and Audiences of this system are:</p><ol><li>The main admin is played by the Dinas Komunikasi dan Informatika and Badan Keuangan Daerah (BKD) of Karanganyar Regency. Karanganyar</li><li>Service admins who are played by regional apparatus (Dinas, Badan, Units, Inspectorates, Sub-districts, and Villages)</li><li>Correctors who are played by employees in the field of treasury and regional cash Badan Keuangan Daerah (BKD) Karanganyar Regency</li><li>Bendahara Umum Daerah (BUD) who is played by the Head of the Badan Keuangan Daerah (BKD) of Karanganyar Regency.</li></ol>",
+    "job_description": "<p><strong>Role: Fullstack Developer</strong></p><ul><li>Designing application architecture</li><li>Create interface designs by applying UI/UX principles to ensure optimal user experience</li><li>Build attractive and responsive user interfaces</li><li>Implement application business logic and manage databases</li><li>Optimize application performance to improve speed and scalability</li><li>Perform unit testing to ensure code quality</li></ul>",
+    "tools": [
+      "Laravel",
+      "Livewire",
+      "Alpine.js",
+      "Tailwind CSS",
+      "PHPUnit",
+      "PostgreSQL",
+      "Git",
+      "Figma"
+    ],
+    "progress": "<h3>Needs Analysis</h3><p><strong>OPD:</strong></p><ol><li>Need an intuitive and easy-to-use interface to create SPM.</li><li>Want to be able to quickly find the required data (account code, SPM type, etc.) from the integrated database.</li><li>Want to reduce the time needed to create an SPM.</li><li>Avoid data input errors as data is automatically retrieved from the system.</li></ol><p><strong>Corrector:</strong></p><ol><li>Need a tool to quickly identify incomplete or incorrect documents.</li><li>Wants to be able to provide clear feedback to OPD regarding reasons for rejection.</li><li>Needs easy access to all documents related to the proposed SPM.</li></ol><p><strong>BUD:</strong></p><ol><li>Want to reduce manual work in making SP2D.</li><li>Need a system that can automatically retrieve data from validated SPM.</li><li>Need a preview feature to ensure the data inputted is correct.</li><li>Want to minimize errors in making SP2D.</li></ol><h3>Business Process</h3><p>The following is an overview of the business process of the Fund Disbursement Order Issuance System.</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;Proses Bisnis SP2D(1).png&quot;,&quot;filesize&quot;:98872,&quot;height&quot;:947,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/XEhYsES9bUxG3UhHWASKdmHnY2OTLvx2SxPDE3v8.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/XEhYsES9bUxG3UhHWASKdmHnY2OTLvx2SxPDE3v8.png&quot;,&quot;width&quot;:771}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/XEhYsES9bUxG3UhHWASKdmHnY2OTLvx2SxPDE3v8.png\"><img src=\"http://127.0.0.1:8000/storage/progress/XEhYsES9bUxG3UhHWASKdmHnY2OTLvx2SxPDE3v8.png\" width=\"771\" height=\"947\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">Proses Bisnis SP2D(1).png</span> <span class=\"attachment__size\">96.55 KB</span></figcaption></a></figure></p><h3><strong>Desain</strong></h3><p>In designing this app, I focused on simplicity so that users can easily understand how to use it. Consistency in color and typography was a priority to create a pleasant experience. I paid attention to accessibility by using adequate color contrast and avoiding elements that could distract visually impaired users. Last but not least, responsiveness is a key consideration so that the app can be used comfortably on various devices.</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;gambar.png&quot;,&quot;filesize&quot;:137689,&quot;height&quot;:732,&quot;href&quot;:&quot;http://127.0.0.1:8000//storage/progress/0drYqFPIZqxp62AF7g3PXFbWvrSXF9hYl1rocUTa.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000//storage/progress/0drYqFPIZqxp62AF7g3PXFbWvrSXF9hYl1rocUTa.png&quot;,&quot;width&quot;:1350}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000//storage/progress/0drYqFPIZqxp62AF7g3PXFbWvrSXF9hYl1rocUTa.png\"><img src=\"http://127.0.0.1:8000//storage/progress/0drYqFPIZqxp62AF7g3PXFbWvrSXF9hYl1rocUTa.png\" width=\"1350\" height=\"732\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">gambar.png</span> <span class=\"attachment__size\">134.46 KB</span></figcaption></a></figure></p><h3><strong>Implementation</strong></h3><p>The development of this application was done individually. The implementation process started with building the frontend using Laravel Blade, Livewire, Alpine.js, and Tailwind CSS. UI components such as input forms, data tables, and action buttons were made modular to facilitate maintenance.</p><p>The backend of the application was built using Laravel. The database used is PostgreSQL to store user, document, and transaction data. The authentication process utilizes Laravel Authentication. For testing, I used PHPUnit for unit testing.</p><p><strong>Main Features:</strong></p><ol><li>Simplification of Pay Order creation</li><li>The system is equipped with data management of the administration, account code, type of Pay Order, and supporting documents. These data are required in the creation of a Pay Warrant, so the process of creating a Pay Warrant becomes easier because Organisasi Perangkat Daerah (OPD) do not need to search for data manually they can simply choose from the available options.</li><li>Efficiency in the validation process of the proposed Pay Warrant.</li><li>The validation process is done online. The corrector can determine documents that are still incorrect and provide information. Both the corrector and BUD can reject the proposal if there are invalid documents. OPD can also immediately receive rejection information, so they can immediately make improvements.</li><li>Ease of making Fund Disbursement Order (SP2D)</li><li>In making SP2D, BUD does not need to input a lot of data because most of the information has been taken automatically from the proposed Payment Order. The system also features a letter preview feature that helps BUD reduce input errors. With this feature, BUD can directly see the results of their input in the form of a letter before saving it.</li></ol>",
+    "result": "<p>After going through the process of making applications ranging from design design to development, the Sistem Penerbitan Surat Perintah Pencairan Dana application can now be accessed directly. Access rights are only given to OPD employees in Karanganyar Regency so that it cannot be accessed generally.&nbsp;</p><p>Visit the site directly <a href=\"https://sp2d.karanganyarkab.go.id/login\">here</a>.</p>",
     "links": [
+      { "name": "Website", "url": "https://sp2d.karanganyarkab.go.id/" }
+    ],
+    "galleries": [],
+    "created_at": "2024-09-24T10:11:30.000000Z",
+    "updated_at": "2024-10-01T10:14:07.000000Z"
+  },
+  {
+    "id": 9,
+    "name": "CetakOnline",
+    "slug": "cetakonline",
+    "categories": ["Software Development", "UI/UX Design"],
+    "date": "2024-08-26",
+    "image": "http://127.0.0.1:8000/storage/thumbnails/01J937TZP6D9408WHHX791HK7A.png",
+    "overview": "<p>CetakOnline is an innovative vending machine service integrated with an easy-to-use website, designed to <strong>simplify and streamline the document printing process</strong>. Users can upload their documents, make payments online, and then use the QR code on the vending machine to print their documents quickly and efficiently.&nbsp;</p>",
+    "goal": "<p>The objectives of creating the PrintOnline application are:&nbsp;</p><ol><li>Simplify Access to Printing Services: Provide faster and easier document printing solutions, especially for users who are far from conventional printing locations. Reducing the time and effort required to print documents.</li><li>Improve Printing Process Efficiency: Enable users to upload documents and make payments anytime and anywhere.</li></ol>",
+    "client": null,
+    "user_and_audience": "<p>&nbsp;General public: The general public, especially in places far from the printing press, who need printing services for personal use.&nbsp;</p>",
+    "job_description": "<p>&nbsp;<strong>Role: Frontend Developer &amp; UI/UX Designer&nbsp;</strong></p><ul><li>Design wireframes, mockups, and prototypes with a focus on intuitive user experience.</li><li>Implement designs from Figma into responsive and efficient HTML and Tailwind CSS code.</li><li>Integrate and manage APIs provided by the backend team to support frontend functionality.</li><li>Perform debugging and performance optimization to ensure the application runs smoothly on various devices.</li><li>Optimize SEO to increase website visibility.</li></ul>",
+    "tools": ["Next.js", "Tailwind CSS", "Figma", "Git"],
+    "progress": "<h3>Creating a Logo<figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:474015,&quot;height&quot;:2160,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/0r6kgGUbc0JjeJqSlnhB1weCqQCL2sEnPRnIqB5U.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/0r6kgGUbc0JjeJqSlnhB1weCqQCL2sEnPRnIqB5U.png&quot;,&quot;width&quot;:3840}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;caption&quot;:&quot;CetakOnline Logo&quot;,&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/0r6kgGUbc0JjeJqSlnhB1weCqQCL2sEnPRnIqB5U.png\"><img src=\"http://127.0.0.1:8000/storage/progress/0r6kgGUbc0JjeJqSlnhB1weCqQCL2sEnPRnIqB5U.png\" width=\"3840\" height=\"2160\"><figcaption class=\"attachment__caption attachment__caption--edited\">CetakOnline Logo</figcaption></a></figure></h3><h3>Creating Wireframe<figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image-1.png&quot;,&quot;filesize&quot;:201548,&quot;height&quot;:861,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/COGNscWZO7sZ0DP16x6z81hoWEPz561HtVMHw1hH.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/COGNscWZO7sZ0DP16x6z81hoWEPz561HtVMHw1hH.png&quot;,&quot;width&quot;:1327}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;caption&quot;:&quot;CetakOnline Wireframe&quot;,&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/COGNscWZO7sZ0DP16x6z81hoWEPz561HtVMHw1hH.png\"><img src=\"http://127.0.0.1:8000/storage/progress/COGNscWZO7sZ0DP16x6z81hoWEPz561HtVMHw1hH.png\" width=\"1327\" height=\"861\"><figcaption class=\"attachment__caption attachment__caption--edited\">CetakOnline Wireframe</figcaption></a></figure>Creating a Design System</h3><h3><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:36298,&quot;height&quot;:288,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/kFj1QUvUp5rIejeRnyEVqgNkdwt9xbplbSyFyF1V.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/kFj1QUvUp5rIejeRnyEVqgNkdwt9xbplbSyFyF1V.png&quot;,&quot;width&quot;:1042}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;caption&quot;:&quot;CetakOnline Design System&quot;,&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/kFj1QUvUp5rIejeRnyEVqgNkdwt9xbplbSyFyF1V.png\"><img src=\"http://127.0.0.1:8000/storage/progress/kFj1QUvUp5rIejeRnyEVqgNkdwt9xbplbSyFyF1V.png\" width=\"1042\" height=\"288\"><figcaption class=\"attachment__caption attachment__caption--edited\">CetakOnline Design System</figcaption></a></figure>Creating Mockups<figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image-1.png&quot;,&quot;filesize&quot;:76251,&quot;height&quot;:426,&quot;href&quot;:&quot;http://127.0.0.1:8000/storage/progress/FsP6bXK0culSewh3NJEUTNnbV94zSScAK3noV0bC.png&quot;,&quot;url&quot;:&quot;http://127.0.0.1:8000/storage/progress/FsP6bXK0culSewh3NJEUTNnbV94zSScAK3noV0bC.png&quot;,&quot;width&quot;:681}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;caption&quot;:&quot;CetakOnline Mockup&quot;,&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://127.0.0.1:8000/storage/progress/FsP6bXK0culSewh3NJEUTNnbV94zSScAK3noV0bC.png\"><img src=\"http://127.0.0.1:8000/storage/progress/FsP6bXK0culSewh3NJEUTNnbV94zSScAK3noV0bC.png\" width=\"681\" height=\"426\"><figcaption class=\"attachment__caption attachment__caption--edited\">CetakOnline Mockup</figcaption></a></figure>Implementasi</h3><p>I am responsible for building the frontend of PrintOnline using Next.js and Tailwind CSS. My main focus is to create an intuitive and efficient user experience in every process.</p><p>Here is the list of features of the PrintOnline app for Users:</p><ol><li>Main Page</li><li>Machine (Printer) Location Search</li><li>Document Upload</li><li>Transaction History</li><li>Transaction Details</li><li>Problem Report (Complaint)</li></ol><p>The following is a list of features of the PrintOnline application for Admin:</p><ol><li>Dashboard</li><li>Machine Management</li><li>Complaint Management</li><li>Operator Management</li><li>Transaction History</li><li>Print History</li></ol><p><br></p><h3><br></h3>",
+    "result": "<p>After going through the process of making applications from design to development, the PrintOnline application can now be accessed live.&nbsp;</p><p>Visit the site directly here.&nbsp;</p>",
+    "links": [
+      { "name": "Website", "url": "https://cetakonline.id/" },
       {
-        "name": "Website",
-        "url": "https://sp2d.karanganyarkab.go.id/"
+        "name": "Figma Design",
+        "url": "https://www.figma.com/design/tLkrKWBb0bACJ3e2hVzWrN/CetakDisini?node-id=76-133&t=qHVYHIDH2ReiTsGF-1"
       }
     ],
-    "created_at": "2024-09-24T10:11:30.000000Z",
-    "updated_at": "2024-09-24T10:11:30.000000Z"
+    "galleries": [],
+    "created_at": "2024-10-01T05:11:22.000000Z",
+    "updated_at": "2024-10-01T05:11:22.000000Z"
   }
 ]
