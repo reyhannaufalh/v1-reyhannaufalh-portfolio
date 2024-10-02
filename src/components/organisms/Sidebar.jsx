@@ -1,12 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faBars,
-  faDownload,
-  faFilePdf,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
   const location = useLocation();

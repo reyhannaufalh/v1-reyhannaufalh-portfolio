@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Portfolio from "./components/templates/Portfolio";
+import Project from "./components/templates/Project";
 import Layout from "./layouts/Layout";
 import ProjectDetails from "./components/templates/ProjectDetails";
 import HomePage from "./components/templates/HomePage";
@@ -20,10 +20,10 @@ const App = () => {
         />
 
         <Route
-          path="/portfolio"
+          path="/projects"
           element={
             <Layout>
-              <Portfolio />
+              <Project />
             </Layout>
           }
         />

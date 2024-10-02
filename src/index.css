@@ -28,19 +28,51 @@ body {
   padding-left: 1.5rem;
 }
 
-.custom-editor h1 {
-  font-size: 1.5rem /* 24px */;
-  line-height: 2rem /* 32px */;
+.custom-editor ol li {
+  margin: 0.75rem 0;
+}
+
+.custom-editor ul {
+  list-style-type: disc !important;
+  padding-left: 1.5rem;
+}
+
+.custom-editor ul li {
+  margin: 0.75rem 0;
+}
+
+.custom-editor {
+  line-height: 1.5rem;
 }
 
 .custom-editor h2 {
-  font-size: 1.25rem /* 20px */;
-  line-height: 1.75rem /* 28px */;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 .custom-editor h3 {
-  font-size: 1.125rem /* 18px */;
-  line-height: 1.5rem /* 24px */;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.custom-editor__progress p > strong {
+  margin: 24px 0 !important;
+  line-height: 3rem;
+}
+
+.custom-editor img {
+  width: 100%;
+  height: auto;
+}
+
+.custom-editor figcaption {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 @layer components {

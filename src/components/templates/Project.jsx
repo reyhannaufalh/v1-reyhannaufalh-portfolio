@@ -4,7 +4,7 @@ import ProjectCard from "../organisms/ProjectCard";
 import { axiosInstance } from "../../lib/axiosInstance";
 import projects_data from "../../data/projects.json";
 
-export default function Portfolio() {
+export default function Project() {
   const [selectedTag, setSelectedTag] = useState("All");
 
   let [projects, setProjects] = useState(null);

@@ -35,9 +35,9 @@ export default function ProjectDetails() {
       <div className="container flex flex-col gap-16 mt-16 xl:mt-20 xl:px-44">
         <div>
           <div className="flex gap-3">
-            {project?.data.categories?.map((tag, index) => (
+            {project?.data.categories?.map((tag) => (
               <span
-                key={index}
+                key={tag}
                 className="px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-400"
               >
                 {tag}
@@ -49,8 +49,8 @@ export default function ProjectDetails() {
           </h1>
 
           <div className="flex flex-col gap-4 mt-12 sm:flex-row">
-            {project?.data.links.map((links, index) => (
-              <ProjectLink key={index} url={links.url} text={links.name} />
+            {project?.data.links.map((links) => (
+              <ProjectLink key={links.url} url={links.url} text={links.name} />
             ))}
           </div>
         </div>
@@ -72,12 +72,80 @@ export default function ProjectDetails() {
             <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
               Overview
             </h5>
-            <p className="mb-2 font-semibold text-2">
-              Project from: {project?.data.client}
-            </p>
             <div className="leading-relaxed custom-editor text-neutral-300">
               <div
                 dangerouslySetInnerHTML={{ __html: project?.data.overview }}
+              ></div>
+            </div>
+          </div>
+        )}
+
+        {project?.data.goal && (
+          <div>
+            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+              The Goal
+            </h5>
+            <div className="leading-relaxed custom-editor text-neutral-300">
+              <div
+                dangerouslySetInnerHTML={{ __html: project?.data.goal }}
+              ></div>
+            </div>
+          </div>
+        )}
+
+        {project?.data.client && (
+          <div>
+            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+              About the Client
+            </h5>
+            <div className="leading-relaxed custom-editor text-neutral-300">
+              <div
+                dangerouslySetInnerHTML={{ __html: project?.data.client }}
+              ></div>
+            </div>
+          </div>
+        )}
+
+        {project?.data.job_description && (
+          <div>
+            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+              My Role and Responsibilities
+            </h5>
+            <div className="leading-relaxed custom-editor text-neutral-300">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: project?.data.job_description,
+                }}
+              ></div>
+            </div>
+          </div>
+        )}
+
+        <div>
+          <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+            Tools
+          </h5>
+          <p></p>
+          <div className="flex flex-wrap gap-2">
+            {project?.data.tools?.map((tool) => (
+              <span
+                className="px-4 py-2 text-sm text-white duration-500 border-2 rounded-full cursor-pointer hover:border-violet-500 border-neutral-700"
+                key={tool}
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {project?.data.progress && (
+          <div>
+            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
+              Progress
+            </h5>
+            <div className="leading-relaxed custom-editor custom-editor__progress text-neutral-300">
+              <div
+                dangerouslySetInnerHTML={{ __html: project?.data.progress }}
               ></div>
             </div>
           </div>
@@ -95,71 +163,7 @@ export default function ProjectDetails() {
             </div>
           </div>
         )}
-
-        {project?.data.job_description && (
-          <div>
-            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
-              Job Description
-            </h5>
-            <div className="leading-relaxed custom-editor text-neutral-300">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: project?.data.job_description,
-                }}
-              ></div>
-            </div>
-          </div>
-        )}
-
-        {project?.data.progress && (
-          <div>
-            <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
-              Progress
-            </h5>
-            <div className="leading-relaxed custom-editor text-neutral-300">
-              <div
-                dangerouslySetInnerHTML={{ __html: project?.data.progress }}
-              ></div>
-            </div>
-          </div>
-        )}
-
-        <div>
-          <h5 className="font-bold text-4xl mb-3 leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
-            Tools
-          </h5>
-          <p></p>
-          <div className="flex flex-wrap gap-2">
-            {project?.data.tools?.map((tool, index) => (
-              <span
-                className="px-4 py-2 text-sm text-white duration-500 border-2 rounded-full cursor-pointer hover:border-violet-500 border-neutral-700"
-                key={index}
-              >
-                {tool}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
-
-      <div className="container my-20 xl:my-28">
-        <hr className="w-full border border-neutral-900 " />
-      </div>
-
-      {/* <div className="container flex flex-col gap-16 xl:px-56">
-        <h5 className="font-bold text-5xl xl:text-6xl mb-2 text-center leading-tight [text-shadow:0px_2px_12px_var(--tw-shadow-color)] shadow-neutral-500">
-          More related projects.
-        </h5>
-        <div className="grid w-full grid-cols-2 gap-8">
-          {projectExceptThis ? (
-            projectExceptThis.map((project, index) => (
-              <ProjectCard key={index} data={project} />
-            ))
-          ) : (
-            <p>No projects found</p>
-          )}
-        </div>
-      </div> */}
 
       <div className="container my-20 xl:my-28">
         <hr className="w-full border border-neutral-900 " />

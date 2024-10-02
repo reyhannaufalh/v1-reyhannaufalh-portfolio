@@ -55,8 +55,8 @@ export default function Navbar({ toggleSidebar, setToggleSidebar }) {
               Home
             </Link>
             <Link
-              to="/portfolio"
-              className={getLinkClass("/portfolio")}
+              to="/projects"
+              className={getLinkClass("/projects")}
               onClick={() => {
                 window.scroll({
                   top: 0,
@@ -64,7 +64,7 @@ export default function Navbar({ toggleSidebar, setToggleSidebar }) {
                 });
               }}
             >
-              Works
+              Projects
             </Link>
             <Link to="/about" className={getLinkClass("/about")}>
               About
