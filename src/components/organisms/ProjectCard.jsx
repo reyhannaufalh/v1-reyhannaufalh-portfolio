@@ -5,18 +5,17 @@ import { Link } from "react-router-dom";
 export default function ProjectCard(data) {
   const { name, slug, categories, image } = data.data;
 
-  // const imageSrc = image ?? "../images/project-image-1.png";
-
   return (
     <Link
       to={`/projects/${slug}`}
       className="col-span-2 overflow-hidden duration-500 lg:col-span-1 bg-neutral-900 rounded-2xl group"
       onClick={() => window.scrollTo(0, 0)}
+      data-aos="zoom-in-down"
     >
       <div className="overflow-hidden bg-neutral-700 aspect-video">
         <img
           src={image}
-          alt="thumb"
+          alt=""
           className="object-cover w-full h-full transition-transform duration-500 transform group-hover:scale-105"
         />
       </div>

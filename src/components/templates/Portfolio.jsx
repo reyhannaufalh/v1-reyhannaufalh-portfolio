@@ -46,7 +46,7 @@ export default function Portfolio() {
 
           <div className="flex flex-wrap gap-4">
             <button
-              className={`w-48 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 bg-gradient-to-tr ${
+              className={`w-56 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 bg-gradient-to-tr ${
                 selectedTag === "All"
                   ? "from-violet-800 to-violet-500 border-0"
                   : "bg-transparent border-neutral-700"
@@ -56,7 +56,7 @@ export default function Portfolio() {
               All Projects
             </button>
             <button
-              className={`w-48 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 ${
+              className={`w-56 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 ${
                 selectedTag === "Software Development"
                   ? "bg-gradient-to-tr from-violet-800 to-violet-500 border-0"
                   : "bg-transparent border-neutral-700"
@@ -66,7 +66,7 @@ export default function Portfolio() {
               Software Development
             </button>
             <button
-              className={`w-48 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 ${
+              className={`w-56 rounded-full border shadow-neutral-500 text-sm font-semibold py-3 ${
                 selectedTag === "UI/UX Design"
                   ? "bg-gradient-to-tr from-violet-800 to-violet-500 border-0"
                   : "bg-transparent border-neutral-700"
