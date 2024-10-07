@@ -37,8 +37,8 @@ export default function Sidebar({ toggleSidebar, setToggleSidebar }) {
               </Link>
 
               <Link
-                to={"/portfolio"}
-                className={getLinkClass("/portfolio")}
+                to={"/projects"}
+                className={getLinkClass("/projects")}
                 onClick={() => setToggleSidebar(!toggleSidebar)}
               >
                 Works
